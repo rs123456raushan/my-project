@@ -8,12 +8,12 @@ import './style.css'
 function Team() {
     return (
         <div>
-            <div class="main wrapper">
+            <div className="main wrapper">
                 {/* <!-- *************** HERO SECTION STARTS *************** --> */}
-                <section class="hero-section">
+                <section className="hero-section">
                     <img src={heroSectionTeam} alt="" />
-                    <div class="hero-section-box">
-                        <div class="hero-section-text">
+                    <div className="hero-section-box">
+                        <div className="hero-section-text">
                             <p>OUR TEAM</p>
                         </div>
                     </div>
@@ -21,16 +21,16 @@ function Team() {
 
                 {/* <!-- *************** TEAM SECTION STARTS *************** --> */}
 
-                <section class="team-section">
-                    <div class="container">
-                        <div class="person-card-wrapper">
-                            <div class="person-card">
+                <section className="team-section">
+                    <div className="container">
+                        <div className="person-card-wrapper">
+                            <div className="person-card">
                                 <img src={teamAnand} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>ANAND TRIPATHI</h4>
                                     <p>chief business officer</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -48,13 +48,13 @@ function Team() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={teamAnand} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>Saurabh arora</h4>
                                     <p>Chief Finance Officer</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -72,13 +72,13 @@ function Team() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={teamKapil} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>Kapil Tyagi</h4>
                                     <p>chief business officer</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -96,13 +96,13 @@ function Team() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={teamChandini} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>Chandani Gagwani</h4>
                                     <p>company secretary</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding

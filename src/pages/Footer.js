@@ -10,11 +10,11 @@ function Footer() {
     return (
         // <!-- *************** FOOTER SECTION STARTS *************** -->
         <footer>
-            <div class="footer-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-12">
-                            <div class="footer-section-left">
+            <div className="footer-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4 col-12">
+                            <div className="footer-section-left">
                                 <img src={footerLogo} />
                                 <p>
                                     Since 2010, we are on a
@@ -25,8 +25,8 @@ function Footer() {
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-2 col-6">
-                            <div class="footer-section-middle">
+                        <div className="col-md-2 col-6">
+                            <div className="footer-section-middle">
                                 <h6>Quick Links</h6>
                                 <ul>
                                     <li><NavLink to="/home">Home</NavLink></li>
@@ -38,8 +38,8 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-2 col-6">
-                            <div class="footer-section-middle policy">
+                        <div className="col-md-2 col-6">
+                            <div className="footer-section-middle policy">
                                 <ul>
                                     <li><NavLink to="/policies">Policies</NavLink></li>
                                     <li><NavLink to="/board">Board</NavLink></li>
@@ -48,23 +48,23 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12">
-                            <div class="footer-section-right">
-                                <div class="footer-card">
+                        <div className="col-md-4 col-12">
+                            <div className="footer-section-right">
+                                <div className="footer-card">
                                     <img src={footerMailIcon} />
                                     <div>
                                         <p>Email id</p>
                                         <h6>info@svcl.in</h6>
                                     </div>
                                 </div>
-                                <div class="footer-card">
+                                <div className="footer-card">
                                     <img src={footerPhoneIcon} />
                                     <div>
                                         <p>Contact</p>
                                         <h6>1800-120-9040</h6>
                                     </div>
                                 </div>
-                                <div class="footer-card">
+                                <div className="footer-card">
                                     <img src={footerLocationIcon} />
                                     <div>
                                         <p>Address</p>
@@ -75,7 +75,7 @@ function Footer() {
                         </div>
                     </div>
                     <hr />
-                    <p class="footer-section-copyright">Copyright © 2023</p>
+                    <p className="footer-section-copyright">Copyright © 2023</p>
                 </div>
             </div>
         </footer>

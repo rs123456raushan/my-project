@@ -9,16 +9,16 @@ import './style.css'
 function Value() {
     return (
         <div>
-            <section class="value-section d-md-block d-none">
-                <div class="container">
-                    <div class="main-heading">OUR VALUES</div>
-                    <div class="card-wrapper">
-                        <div class="value-cards-wrapper">
-                            <div class="value-card">
-                                <div class="value-card-image">
+            <section className="value-section d-md-block d-none">
+                <div className="container">
+                    <div className="main-heading">OUR VALUES</div>
+                    <div className="card-wrapper">
+                        <div className="value-cards-wrapper">
+                            <div className="value-card">
+                                <div className="value-card-image">
                                     <img src={valueCardImg1} alt="" />
                                 </div>
-                                <div class="value-card-body">
+                                <div className="value-card-body">
                                     <h5>सम्मान</h5>
                                     <h6>Respect as fundamental value</h6>
                                     <p>
@@ -29,12 +29,12 @@ function Value() {
                                 </div>
                             </div>
 
-                            <div class="value-card">
-                                <div class="value-card-image">
+                            <div className="value-card">
+                                <div className="value-card-image">
                                     <img src={valueCardImg2}
                                         alt="" />
                                 </div>
-                                <div class="value-card-body">
+                                <div className="value-card-body">
                                     <h5>साधना</h5>
                                     <h6>Discipline, resilience and hardwork</h6>
                                     <p>
@@ -44,13 +44,13 @@ function Value() {
                                 </div>
                             </div>
 
-                            <div class="value-card">
-                                <div class="value-card-image">
+                            <div className="value-card">
+                                <div className="value-card-image">
                                     <img
                                         src={valueCardImg3}
                                         alt="" />
                                 </div>
-                                <div class="value-card-body">
+                                <div className="value-card-body">
                                     <h5>सहयोग</h5>
                                     <h6>Culture of we. Not me.</h6>
                                     <p>
@@ -61,12 +61,12 @@ function Value() {
                                 </div>
                             </div>
 
-                            <div class="value-card">
-                                <div class="value-card-image">
+                            <div className="value-card">
+                                <div className="value-card-image">
                                     <img src={valueCardImg4}
                                         alt="" />
                                 </div>
-                                <div class="value-card-body">
+                                <div className="value-card-body">
                                     <h5>सेवा</h5>
                                     <h6>Customer is our <del>king</del> queen.</h6>
                                     <p>
@@ -77,11 +77,11 @@ function Value() {
                                 </div>
                             </div>
 
-                            <div class="value-card">
-                                <div class="value-card-image">
+                            <div className="value-card">
+                                <div className="value-card-image">
                                     <img src={valueCardImg5} alt="" />
                                 </div>
-                                <div class="value-card-body">
+                                <div className="value-card-body">
                                     <h5>सुधार</h5>
                                     <h6>Hungry to be better. Every day.</h6>
                                     <p>
@@ -95,12 +95,12 @@ function Value() {
                 </div>
             </section>
 
-            <section class="value-mobile-section d-md-none d-block">
-                <div class="container">
-                    <div class="main-heading">OUR VALUES</div>
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <section className="value-mobile-section d-md-none d-block">
+                <div className="container">
+                    <div className="main-heading">OUR VALUES</div>
+                    <div id="carouselExampleIndicators" className="carousel slide">
+                        <div className="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
@@ -111,13 +111,13 @@ function Value() {
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
                                 aria-label="Slide 5"></button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="value-card">
-                                    <div class="value-card-image">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <div className="value-card">
+                                    <div className="value-card-image">
                                         <img src={valueCardImg1} alt="" />
                                     </div>
-                                    <div class="value-card-body">
+                                    <div className="value-card-body">
                                         <h5>सम्मान</h5>
                                         <h6>Respect as fundamental value</h6>
                                         <p>
@@ -128,12 +128,12 @@ function Value() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="value-card">
-                                    <div class="value-card-image">
+                            <div className="carousel-item">
+                                <div className="value-card">
+                                    <div className="value-card-image">
                                         <img src={valueCardImg2} alt="" />
                                     </div>
-                                    <div class="value-card-body">
+                                    <div className="value-card-body">
                                         <h5>साधना</h5>
                                         <h6>Discipline, resilience and hardwork</h6>
                                         <p>
@@ -143,12 +143,12 @@ function Value() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="value-card">
-                                    <div class="value-card-image">
+                            <div className="carousel-item">
+                                <div className="value-card">
+                                    <div className="value-card-image">
                                         <img src={valueCardImg3} alt="" />
                                     </div>
-                                    <div class="value-card-body">
+                                    <div className="value-card-body">
                                         <h5>सहयोग</h5>
                                         <h6>Culture of we. Not me.</h6>
                                         <p>
@@ -159,12 +159,12 @@ function Value() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="value-card">
-                                    <div class="value-card-image">
+                            <div className="carousel-item">
+                                <div className="value-card">
+                                    <div className="value-card-image">
                                         <img src={valueCardImg4} alt="" />
                                     </div>
-                                    <div class="value-card-body">
+                                    <div className="value-card-body">
                                         <h5>सेवा</h5>
                                         <h6>Customer is our <del>king</del> queen.</h6>
                                         <p>
@@ -175,12 +175,12 @@ function Value() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="value-card">
-                                    <div class="value-card-image">
+                            <div className="carousel-item">
+                                <div className="value-card">
+                                    <div className="value-card-image">
                                         <img src={valueCardImg5} alt="" />
                                     </div>
-                                    <div class="value-card-body">
+                                    <div className="value-card-body">
                                         <h5>सुधार</h5>
                                         <h6>Hungry to be better. Every day.</h6>
                                         <p>

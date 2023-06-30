@@ -11,12 +11,12 @@ import './style.css'
 function Board() {
     return (
         <div>
-            <div class="main wrapper">
+            <div className="main wrapper">
                 {/* <!-- *************** HERO SECTION STARTS *************** --> */}
-                <section class="hero-section">
+                <section className="hero-section">
                     <img src={heroSectionBoard} alt="" />
-                    <div class="hero-section-box">
-                        <div class="hero-section-text">
+                    <div className="hero-section-box">
+                        <div className="hero-section-text">
                             <p>OUR BOARD</p>
                         </div>
                     </div>
@@ -24,16 +24,16 @@ function Board() {
 
                 {/* <!-- *************** BOARD SECTION STARTS *************** --> */}
 
-                <section class="board-section">
-                    <div class="container">
-                        <div class="person-card-wrapper">
-                            <div class="person-card">
+                <section className="board-section">
+                    <div className="container">
+                        <div className="person-card-wrapper">
+                            <div className="person-card">
                                 <img src={boardSunil} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>MR. SUNIL SACHDEVA</h4>
                                     <p>Promoter Director</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -51,13 +51,13 @@ function Board() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={boardVijay} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>MR. VIJAY PAREKH</h4>
                                     <p>Promoter Director</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -75,13 +75,13 @@ function Board() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={boardMeeta} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>MS. MEETA MAKHAN</h4>
                                     <p>INDEPENDENT DIRECTOR</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -99,13 +99,13 @@ function Board() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={boardAnil} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>Mr. Anil Kumar Jha</h4>
                                     <p>INDEPENDENT DIRECTOR</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -123,13 +123,13 @@ function Board() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={boardKalpataru} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>MR. KALPATARU TRIPATHY</h4>
                                     <p>INDEPENDENT DIRECTOR</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding
@@ -147,13 +147,13 @@ function Board() {
                                     </p>
                                 </div>
                             </div>
-                            <div class="person-card">
+                            <div className="person-card">
                                 <img src={boardVivek} alt="" />
-                                <div class="person-card-text">
+                                <div className="person-card-text">
                                     <h4>Mr. Vivek Goyal</h4>
                                     <p>INDEPENDENT DIRECTOR</p>
                                 </div>
-                                <div class="person-card-overlay">
+                                <div className="person-card-overlay">
                                     <p>
                                         He is a socially driven entrepreneur having in-depth
                                         experience in setting up various projects with outstanding

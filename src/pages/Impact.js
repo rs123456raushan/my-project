@@ -11,62 +11,62 @@ function Impact() {
     return (
         <div>
             {/* <!-- *************** IMPACT SECTION STARTS *************** --> */}
-            <section class="impact-section">
-                <div class="container">
-                    <div class="main-heading">OUR IMPACT</div>
-                    <div class="impact-card-wrapper">
-                        <div class="impact-card">
-                            <div class="impact-card-image">
+            <section className="impact-section">
+                <div className="container">
+                    <div className="main-heading">OUR IMPACT</div>
+                    <div className="impact-card-wrapper">
+                        <div className="impact-card">
+                            <div className="impact-card-image">
                                 <img src={impactCardImg1} alt="" />
                             </div>
-                            <div class="impact-card-body">
+                            <div className="impact-card-body">
                                 <h3>10</h3>
-                                <p class="impact-card-text">STATES</p>
+                                <p className="impact-card-text">STATES</p>
                             </div>
                         </div>
-                        <div class="impact-card">
-                            <div class="impact-card-image">
+                        <div className="impact-card">
+                            <div className="impact-card-image">
                                 <img src={impactCardImg2} alt="" />
                             </div>
-                            <div class="impact-card-body">
+                            <div className="impact-card-body">
                                 <h3>249</h3>
-                                <p class="impact-card-text">BRANCHES</p>
+                                <p className="impact-card-text">BRANCHES</p>
                             </div>
                         </div>
-                        <div class="impact-card">
-                            <div class="impact-card-image">
+                        <div className="impact-card">
+                            <div className="impact-card-image">
                                 <img src={impactCardImg3} alt="" />
                             </div>
-                            <div class="impact-card-body">
+                            <div className="impact-card-body">
                                 <h3>3.5 L+</h3>
-                                <p class="card-text">CUSTOMERS</p>
+                                <p className="card-text">CUSTOMERS</p>
                             </div>
                         </div>
-                        <div class="impact-card">
-                            <div class="impact-card-image">
+                        <div className="impact-card">
+                            <div className="impact-card-image">
                                 <img src={impactCardImg4} alt="" />
                             </div>
-                            <div class="impact-card-body">
+                            <div className="impact-card-body">
                                 <h3>1400+</h3>
-                                <p class="impact-card-text">EMPLOYEES</p>
+                                <p className="impact-card-text">EMPLOYEES</p>
                             </div>
                         </div>
-                        <div class="impact-card">
-                            <div class="impact-card-image">
+                        <div className="impact-card">
+                            <div className="impact-card-image">
                                 <img src={impactCardImg5} alt="" />
                             </div>
-                            <div class="impact-card-body">
+                            <div className="impact-card-body">
                                 <h3>446 CR</h3>
-                                <p class="impact-card-text">LAST YEAR DISBURSEMENT</p>
+                                <p className="impact-card-text">LAST YEAR DISBURSEMENT</p>
                             </div>
                         </div>
-                        <div class="impact-card">
-                            <div class="impact-card-image">
+                        <div className="impact-card">
+                            <div className="impact-card-image">
                                 <img src={impactCardImg6} alt="" />
                             </div>
-                            <div class="impact-card-body">
+                            <div className="impact-card-body">
                                 <h3>729 CR</h3>
-                                <p class="impact-card-text">AUM</p>
+                                <p className="impact-card-text">AUM</p>
                             </div>
                         </div>
                     </div>
