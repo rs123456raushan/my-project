@@ -1080,7 +1080,7 @@ header .collapse ul li .active {
 /*************** CAREER IMAPCT SECTION CSS ***************/
 
 .career-impact-section {
-  margin-top: -50px;
+  margin-top: -50px!important;
 }
 
 .career-impact-section .container .career-impact-as-on-date {
@@ -1735,7 +1735,7 @@ header .collapse ul li .active {
   /*************** CAREER IMAPCT SECTION CSS ***************/
 
   .career-impact-section {
-    margin-top: -50px;
+    margin-top: -50px!important;
   }
 
   /******************************************************/
@@ -2271,7 +2271,7 @@ header .collapse ul li .active {
   /*************** CAREER IMAPCT SECTION CSS ***************/
 
   .career-impact-section {
-    margin-top: -85px;
+    margin-top: -85px!important;
   }
 
   .career-impact-section .container .career-impact-as-on-date {
@@ -2979,7 +2979,7 @@ header .collapse ul li .active {
   /*************** CAREER IMAPCT SECTION CSS ***************/
 
   .career-impact-section {
-    margin-top: -85px;
+    margin-top: -85px!important;
   }
 
   .career-impact-section .container .career-impact-as-on-date {
@@ -3827,9 +3827,9 @@ header .collapse ul li .active {
 
   /*************** CAREER IMAPCT SECTION CSS ***************/
 
-  .career-impact-section {
+  /* .career-impact-section {
     display: none;
-  }
+  } */
 
   /*************** APPLY SECTION CSS ***************/
 

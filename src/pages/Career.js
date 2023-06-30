@@ -127,10 +127,10 @@ function Career() {
                 </section>
 
                 {/* <!-- *************** VALUE SECTION STARTS *************** --> */}
-                <Value />
+                <Value valueSection={true} />
 
                 {/* <!-- *************** IMPACT SECTION STARTS *************** --> */}
-                <Impact />
+                <Impact impactSection={true} />
 
                 {/* <!-- *************** APPLY SECTION STARTS *************** --> */}
 
@@ -239,7 +239,7 @@ function Career() {
                                         <div className="form-group">
                                             <label for="resume">Resume</label>
                                             <div className="resume-button">
-                                                <input type="file" id="myFileInput" style={{display: 'none'}} />
+                                                <input type="file" id="myFileInput" style={{ display: 'none' }} />
                                                 <button type="button" onClick={() => document.getElementById('myFileInput').click()} className="btn">Upload</button>
                                             </div>
                                         </div>

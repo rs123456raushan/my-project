@@ -7,11 +7,11 @@ import impactCardImg5 from './images/impact-card-img5.png'
 import impactCardImg6 from './images/impact-card-img6.png'
 import './style.css'
 
-function Impact() {
+function Impact({impactSection}) {
     return (
         <div>
             {/* <!-- *************** IMPACT SECTION STARTS *************** --> */}
-            <section className="impact-section">
+            <section className={impactSection?"impact-section career-impact-section":"impact-section"}>
                 <div className="container">
                     <div className="main-heading">OUR IMPACT</div>
                     <div className="impact-card-wrapper">
