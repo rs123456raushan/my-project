@@ -1538,3 +1538,12 @@ header .collapse ul li .active {
   font-size: 16px;
   line-height: 28px;
 }
+
+.fade-in {
+  transition: opacity 1s linear;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}

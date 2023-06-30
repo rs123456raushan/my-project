@@ -239,7 +239,8 @@ function Career() {
                                         <div className="form-group">
                                             <label for="resume">Resume</label>
                                             <div className="resume-button">
-                                                <button type="submit" className="btn">Upload</button>
+                                                <input type="file" id="myFileInput" style={{display: 'none'}} />
+                                                <button type="button" onClick={() => document.getElementById('myFileInput').click()} className="btn">Upload</button>
                                             </div>
                                         </div>
                                     </div>
