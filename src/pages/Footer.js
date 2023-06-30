@@ -8,12 +8,13 @@ import './style.css'
 
 function Footer() {
     return (
+        // <!-- *************** FOOTER SECTION STARTS *************** -->
         <footer>
-            <div className="footer-section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <div className="footer-section-left">
+            <div class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="footer-section-left">
                                 <img src={footerLogo} />
                                 <p>
                                     Since 2010, we are on a
@@ -24,66 +25,46 @@ function Footer() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-2">
-                            <div className="footer-section-middle">
+                        <div class="col-md-2 col-6">
+                            <div class="footer-section-middle">
                                 <h6>Quick Links</h6>
                                 <ul>
-                                    <li>
-                                        <NavLink to="/home">Home</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/presence">Presence</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/products">Products</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/technology">Technology</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/partners">Partners</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/team">Team</NavLink>
-                                    </li>
+                                    <li><NavLink to="/home">Home</NavLink></li>
+                                    <li><NavLink to="/presence">Presence</NavLink></li>
+                                    <li><NavLink to="/products">Products</NavLink></li>
+                                    <li><NavLink to="/technology">Technology</NavLink></li>
+                                    <li><NavLink to="/partners">Partners</NavLink></li>
+                                    <li><NavLink to="/policies">Policies</NavLink></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-2">
-                            <div className="footer-section-middle policy">
+                        <div class="col-md-2 col-6">
+                            <div class="footer-section-middle policy">
                                 <ul>
-                                    <li>
-                                        <NavLink to="/policies">Policies</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/board">Board</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/contact">Contact</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/grievance">Grievance</NavLink>
-                                    </li>
+                                    <li><NavLink to="/policies">Policies</NavLink></li>
+                                    <li><NavLink to="/board">Board</NavLink></li>
+                                    <li><NavLink to="/contact">Contact</NavLink></li>
+                                    <li><NavLink to="/grievance">Grievance</NavLink></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-4">
-                            <div className="footer-section-right">
-                                <div className="footer-card">
+                        <div class="col-md-4 col-12">
+                            <div class="footer-section-right">
+                                <div class="footer-card">
                                     <img src={footerMailIcon} />
                                     <div>
                                         <p>Email id</p>
                                         <h6>info@svcl.in</h6>
                                     </div>
                                 </div>
-                                <div className="footer-card">
+                                <div class="footer-card">
                                     <img src={footerPhoneIcon} />
                                     <div>
                                         <p>Contact</p>
                                         <h6>1800-120-9040</h6>
                                     </div>
                                 </div>
-                                <div className="footer-card">
+                                <div class="footer-card">
                                     <img src={footerLocationIcon} />
                                     <div>
                                         <p>Address</p>
@@ -94,7 +75,7 @@ function Footer() {
                         </div>
                     </div>
                     <hr />
-                    <p className="footer-section-copyright">Copyright © 2023</p>
+                    <p class="footer-section-copyright">Copyright © 2023</p>
                 </div>
             </div>
         </footer>

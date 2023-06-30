@@ -288,7 +288,7 @@ header .collapse ul li .active {
 
 .about-us-section-bottom .right-content p {
   font-size: 16px;
-  line-height: 41px;
+  line-height: 32px;
   color: var(--black-33);
 }
 
@@ -422,8 +422,13 @@ header .collapse ul li .active {
   margin: 230px 0 150px;
 }
 
-.value-section .main-heading {
-  margin-bottom: 60px;
+.value-mobile-section {
+  margin-bottom: 100px;
+}
+
+.value-section .main-heading,
+.value-mobile-section .main-heading {
+  margin-bottom: 30px;
 }
 
 .card-wrapper {
@@ -437,10 +442,11 @@ header .collapse ul li .active {
   flex-wrap: wrap;
 }
 
-.value-cards-wrapper .value-card {
+.value-cards-wrapper .value-card,
+.value-mobile-section .value-card {
   flex-basis: calc((100% / 3) - 15px);
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
-  min-height: 650px;
+  min-height: 550px;
   border-radius: 9px;
   overflow: hidden;
   display: flex;
@@ -448,35 +454,40 @@ header .collapse ul li .active {
   margin-bottom: 5px;
 }
 
-.value-cards-wrapper .value-card-image img {
+.value-cards-wrapper .value-card-image img,
+.value-mobile-section .value-card-image img {
   width: 100%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-.value-cards-wrapper .value-card-body {
+.value-cards-wrapper .value-card-body,
+.value-mobile-section .value-card-body {
   background-color: rgba(219, 34, 40, 0.1);
   text-align: center;
   color: var(--black-33);
-  padding: 50px 20px 40px;
+  padding: 40px 16px 50px;
   flex-grow: 1;
 }
 
-.value-cards-wrapper .value-card-body h5 {
+.value-cards-wrapper .value-card-body h5,
+.value-mobile-section .value-card-body h5 {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 26px;
 }
 
-.value-cards-wrapper .value-card-body h6 {
+.value-cards-wrapper .value-card-body h6,
+.value-mobile-section .value-card-body h6 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 27px;
   margin: 25px 0;
 }
 
-.value-cards-wrapper .value-card-body p {
+.value-cards-wrapper .value-card-body p,
+.value-mobile-section .value-card-body p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 27px;
   text-align: justify;
 }
@@ -738,6 +749,7 @@ header .collapse ul li .active {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+  margin-top: 50px;
 }
 
 .product-card-section .product-card .card-body .card-stats-wrapper .card-stat {
@@ -833,13 +845,15 @@ header .collapse ul li .active {
 }
 
 .partner-section .product-tab-item {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .partner-section .product-tab-item img {
-  width: 100%;
+  width: calc(20% - 20px);
 }
 
 /******************************************************/
@@ -928,6 +942,7 @@ header .collapse ul li .active {
 
 .person-card-wrapper .person-card img {
   width: 100%;
+  height: inherit;
 }
 
 .person-card-wrapper .person-card .person-card-text {
@@ -958,6 +973,33 @@ header .collapse ul li .active {
   font-weight: 500;
   color: var(--white);
   text-transform: uppercase;
+}
+
+.person-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 0;
+  overflow: hidden;
+  background: var(--red);
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person-card-overlay p {
+  color: var(--white);
+  padding: 30px;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.person-card-wrapper .person-card:hover .person-card-overlay {
+  height: 480px;
 }
 
 /******************************************************/
@@ -1038,7 +1080,7 @@ header .collapse ul li .active {
 /*************** CAREER IMAPCT SECTION CSS ***************/
 
 .career-impact-section {
-  margin-top: 40px;
+  margin-top: -50px;
 }
 
 .career-impact-section .container .career-impact-as-on-date {
@@ -1538,6 +1580,2409 @@ header .collapse ul li .active {
   font-size: 16px;
   line-height: 28px;
 }
+
+/******************************************************/
+/********** MEDIA QUERY MAX-WIDTH : 1399PX CSS STARTED **********/
+
+@media (max-width: 1399px) {
+  /******************************************************/
+  /********** INDEX PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** HEADER SECTION CSS ***************/
+
+  header .collapse ul li {
+    padding-right: 18px;
+  }
+
+  /*************** FOUNDER SECTION CSS ***************/
+
+  .founder-section-left .card-body {
+    padding: 24px 32px;
+  }
+
+  .founder-section-left .card-body .card-text {
+    font-size: 27px;
+  }
+
+  .founder-section-right {
+    padding: 130px 70px 115px 135px;
+  }
+
+  .founder-section-right p::before {
+    top: 150px;
+  }
+
+  .founder-section-right p::after {
+    right: -20px;
+    bottom: 140px;
+  }
+
+  /*************** IMPACT SECTION CSS ***************/
+
+  .impact-section {
+    margin-top: -210px;
+  }
+
+  .impact-section .impact-card-wrapper {
+    gap: 15px;
+    bottom: -120px;
+    max-width: 1100px;
+  }
+
+  .impact-section .impact-card-body h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  /*************** VALUE SECTION CSS ***************/
+
+  .value-cards-wrapper .value-card {
+    min-height: 610px;
+  }
+
+  /******************************************************/
+  /********** PRESENCE PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** PARAGRAPH SECTION CSS ***************/
+
+  .paragraph-section {
+    padding: 0 5%;
+  }
+
+  /******************************************************/
+  /********** PRODUCT AND SERVICES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CARD SECTION CSS ***************/
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
+    font-size: 18px;
+  }
+
+  /******************************************************/
+  /********** PARTNERS AND ASSOCIATION PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** PARTNER SECTION CSS ***************/
+
+  .partner-section .nav-tabs .nav-item .nav-link {
+    font-size: 18px;
+  }
+
+  /******************************************************/
+  /********** TEAM CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TEAM SECTION CSS ***************/
+
+  .person-card-wrapper .person-card .person-card-text h4 {
+    font-size: 24px;
+  }
+
+  /******************************************************/
+  /********** POLICIES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** POLICY SECTION CSS ***************/
+
+  .policy-items-wrapper .policy-item h4 {
+    font-size: 18px;
+  }
+
+  .policy-items-wrapper .policy-item a {
+    min-height: 55px;
+  }
+
+  .policy-items-wrapper .policy-item a span {
+    font-size: 16px;
+  }
+
+  /******************************************************/
+  /********** CAREERS PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CAREER WORK SECTION CSS ***************/
+
+  .work-cards-wrapper .work-card {
+    margin-bottom: 30px;
+  }
+
+  .work-cards-wrapper .work-card-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .work-cards-wrapper .work-card-body {
+    padding: 20px 30px;
+  }
+
+  .work-cards-wrapper .work-card-body h5 {
+    font-size: 24px;
+  }
+
+  .work-cards-wrapper .work-card-body p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  /*************** CAREER IMAPCT SECTION CSS ***************/
+
+  .career-impact-section {
+    margin-top: -50px;
+  }
+
+  /******************************************************/
+  /********** CONTACT US PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CONTACT FORM SECTION CSS ***************/
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
+    height: 580px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
+    font-size: 30px;
+    margin-bottom: 48px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .contact-section .container .contact-section-form .row .col-md-12 button {
+    font-size: 20px;
+  }
+
+  /******************************************************/
+  /********** GRIEVANCE PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** GRIEVANCE REDRESSAL SECTION CSS ***************/
+
+  .grievance-redressal-section .container .grievance-redressal-section-content {
+    padding: 10px 100px 10px 10px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
+    margin-bottom: 40px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7 {
+    margin-top: 30px;
+    padding-left: 80px;
+    padding-right: 30px;
+  }
+
+  /*************** GRIEVANCE REDRESSAL MECHANISM SECTION CSS ***************/
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card {
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+    min-height: 400px;
+  }
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card-body h5 {
+    font-size: 26px;
+  }
+
+  /******************************************************/
+  /********** TECHNOLOGY PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TECHNOLOGY PARAGRAPH SECTION CSS ***************/
+
+  .technology-para-section {
+    margin: 110px 0;
+  }
+
+  /*************** TECHNOLOGY CAPITAL SECTION CSS ***************/
+
+  .technology-capital-section .work-card-body h5 {
+    font-size: 22px;
+  }
+
+  .technology-capital-section .work-card-body p {
+    font-size: 16px;
+  }
+}
+
+/******************************************************/
+/********** MEDIA QUERY MAX-WIDTH : 1199PX CSS STARTED **********/
+
+@media (max-width: 1199px) {
+  /* =============== HEADINGS ================== */
+
+  .main-heading {
+    font-size: 32px;
+  }
+
+  /*************** HEADER SECTION CSS ***************/
+
+  header .topbar {
+    padding: 14px 0 14px 40px;
+  }
+
+  header .navbar {
+    padding: 16px 0;
+  }
+
+  header .navbar-brand img {
+    max-width: 140px;
+    height: 48px;
+  }
+
+  header .collapse ul li {
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  /*************** HERO SECTION CSS ***************/
+
+  .main-carousel-section .carousel-content {
+    height: 430px;
+  }
+
+  .main-carousel-section .carousel-content .carousel-text {
+    padding: 45px 0;
+    max-width: 750px;
+  }
+
+  .main-carousel-section .carousel-content .carousel-text p {
+    font-size: 38px;
+    line-height: 64px;
+  }
+
+  /*************** ABOUT US SECTION CSS ***************/
+
+  .about-us-section-top h4 + p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about-us-section-top p:last-child span {
+    font-size: 14px;
+  }
+
+  .about-us-section-bottom .right-content p {
+    font-size: 14px;
+  }
+
+  /*************** FOUNDER SECTION CSS ***************/
+
+  .founder-section-left .card-body {
+    padding: 20px 30px;
+  }
+
+  .founder-section-left .card-body .card-text {
+    font-size: 20px;
+  }
+
+  .founder-section-left .card-body .card-text span {
+    font-size: 20px;
+  }
+
+  .founder-section-right {
+    padding: 150px 60px 115px 120px;
+  }
+
+  .founder-section-right p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .founder-section-right p::before {
+    top: 180px;
+    left: -10;
+    font-size: 320px;
+  }
+
+  .founder-section-right p::after {
+    right: -30px;
+    bottom: 145px;
+    font-size: 320px;
+  }
+
+  /*************** IMPACT SECTION CSS ***************/
+
+  .impact-section {
+    height: 430px;
+    margin-top: -210px;
+  }
+
+  .impact-section .main-heading {
+    padding-top: 160px;
+  }
+
+  .impact-section .impact-card-wrapper {
+    bottom: -140px;
+    max-width: 930px;
+  }
+
+  .impact-section .impact-card {
+    min-height: 250px;
+    padding: 20px 10px;
+  }
+
+  .impact-section .impact-card .impact-card-image {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .impact-section .impact-card .impact-card-image img {
+    max-width: 100%;
+  }
+
+  .impact-section .impact-card-body h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .impact-section .impact-card-body p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /*************** VALUE SECTION CSS ***************/
+
+  .value-cards-wrapper .value-card {
+    min-height: 550px;
+  }
+
+  .value-cards-wrapper .value-card-body {
+    padding: 40px 20px 30px;
+    flex-grow: 1;
+  }
+
+  .value-cards-wrapper .value-card-body h5 {
+    font-size: 26px;
+  }
+
+  .value-cards-wrapper .value-card-body h6 {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .value-cards-wrapper .value-card-body p {
+    font-size: 14px;
+  }
+
+  /*************** FOOTER SECTION CSS ***************/
+
+  .footer-section {
+    padding: 90px 0 65px;
+  }
+
+  .footer-section .footer-section-left {
+    max-width: 270px;
+  }
+
+  .footer-section .footer-section-left img {
+    margin-bottom: 30px;
+  }
+
+  .footer-section .footer-section-left p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .footer-section .footer-section-middle h6 {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .footer-section .footer-section-middle ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-section .footer-section-middle ul li a {
+    font-size: 12px;
+  }
+
+  .footer-section .footer-section-right {
+    max-width: 370px;
+    margin-left: auto;
+  }
+
+  .footer-section .footer-section-right .footer-card {
+    padding: 15px 25px;
+    gap: 17px;
+  }
+
+  .footer-section .footer-section-right .footer-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    padding: 14px;
+  }
+
+  .footer-section .footer-section-right .footer-card div p {
+    font-size: 12px;
+  }
+
+  .footer-section .footer-section-right .footer-card div h6 {
+    font-size: 14px;
+  }
+
+  .footer-section .footer-section-copyright {
+    font-size: 12px;
+  }
+
+  /**********************************************/
+  /********** PRESENCE PAGE CSS STARTED *********/
+  /**********************************************/
+
+  /*************** HERO SECTION CSS ***************/
+
+  .hero-section .hero-section-text {
+    padding: 65px 0;
+    width: 750px;
+  }
+
+  .hero-section .hero-section-text p {
+    font-size: 48px;
+  }
+
+  /*************** PARAGRAPH SECTION CSS ***************/
+
+  .paragraph-section p {
+    font-size: 16px;
+  }
+
+  /*************** MAP SECTION CSS ***************/
+
+  .map-section {
+    padding-top: 30px;
+    margin-bottom: 200px;
+  }
+
+  .map-section .map-section-left {
+    gap: 15px;
+  }
+
+  .map-section .map-section-left .map-section-card {
+    min-height: 150px;
+    padding: 0px;
+    gap: 15px;
+  }
+
+  .map-section .map-section-left .map-section-card h4 {
+    font-size: 48px;
+  }
+
+  .map-section .map-section-left .map-section-card p {
+    font-size: 18px;
+  }
+
+  /******************************************************/
+  /********** PRODUCT AND SERVICES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CARD SECTION CSS ***************/
+
+  .product-card-section .product-card .card-image {
+    height: 210px;
+    padding: 50px 20px 30px;
+  }
+
+  .product-card-section .product-card .card-image h4 {
+    font-size: 28px;
+  }
+
+  .product-card-section .product-card .card-body .para-top {
+    min-height: 365px;
+  }
+
+  .product-card-section .product-card .card-body .para-top p {
+    font-size: 14px;
+  }
+
+  .product-card-section .product-card .card-body .card-stats-wrapper {
+    gap: 6px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    p {
+    font-size: 12px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
+    font-size: 15px;
+  }
+
+  /******************************************************/
+  /********** PARTNERS AND ASSOCIATION PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** PARTNER SECTION CSS ***************/
+
+  .partner-section .nav-tabs .nav-item .nav-link {
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+
+  .partner-section .tab-content {
+    max-width: 780px;
+  }
+
+  .partner-section .product-tab-item {
+    gap: 20px;
+  }
+
+  .partner-section .product-tab-item img {
+    width: calc(25% - 20px);
+  }
+
+  /******************************************************/
+  /********** POLICIES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** POLICY SECTION CSS ***************/
+
+  .policy-items-wrapper .policy-item {
+    padding: 10px 65px 10px 30px;
+  }
+
+  .policy-items-wrapper .policy-item h4 {
+    font-size: 16px;
+  }
+
+  .policy-items-wrapper .policy-item a {
+    min-height: 48px;
+    min-width: 130px;
+  }
+
+  .policy-items-wrapper .policy-item a span {
+    font-size: 16px;
+  }
+
+  .policy-section .view-more-btn {
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+
+  /******************************************************/
+  /********** TEAM PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TEAM SECTION CSS ***************/
+
+  .person-card-wrapper .person-card {
+    height: 400px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text {
+    height: 140px;
+    padding: 20px 15px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text h4 {
+    font-size: 20px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text p {
+    font-size: 14px;
+  }
+
+  .person-card-overlay p {
+    padding: 20px;
+  }
+
+  .person-card-wrapper .person-card:hover .person-card-overlay {
+    height: 400px;
+  }
+
+  /******************************************************/
+  /********** CAREERS PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CAREER WORK SECTION CSS ***************/
+
+  .work-cards-wrapper .work-card {
+    margin-bottom: 25px;
+  }
+
+  .work-cards-wrapper .work-card-image img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .work-cards-wrapper .work-card-body {
+    padding: 15px 25px 5px;
+  }
+
+  .work-cards-wrapper .work-card-body h5 {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .work-cards-wrapper .work-card-body p {
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  /*************** CAREER IMAPCT SECTION CSS ***************/
+
+  .career-impact-section {
+    margin-top: -85px;
+  }
+
+  .career-impact-section .container .career-impact-as-on-date {
+    font-size: 12px;
+    right: 35px;
+  }
+
+  /*************** APPLY SECTION CSS ***************/
+
+  .apply-section .container .apply-section-form .form-group label {
+    font-size: 14px;
+  }
+
+  .apply-section .container .apply-section-form .form-group input {
+    font-size: 12px;
+  }
+
+  .apply-section
+    .container
+    .apply-section-form
+    .form-group
+    .resume-button
+    .btn {
+    font-size: 12px;
+  }
+
+  .apply-section .container .apply-section-form .row .col-md-12 {
+    margin-top: 55px;
+  }
+
+  .apply-section .container .apply-section-form .row .col-md-12 button {
+    padding: 12px 36px;
+    font-size: 14px;
+  }
+
+  /******************************************************/
+  /********** CONTACT US PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CONTACT FORM SECTION CSS ***************/
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
+    height: 500px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content {
+    padding-right: 45px;
+    left: 40px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
+    font-size: 22px;
+    margin-bottom: 48px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    img {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-section .container .contact-section-form .form-group label {
+    font-size: 14px;
+  }
+
+  .contact-section .container .contact-section-form .form-group input {
+    font-size: 12px;
+  }
+
+  .contact-section .container .contact-section-form .row .col-md-12 button {
+    padding: 12px 36px;
+    font-size: 20px;
+  }
+
+  /******************************************************/
+  /********** GRIEVANCE PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** GRIEVANCE REDRESSAL SECTION CSS ***************/
+
+  .grievance-redressal-section .container .grievance-redressal-section-content {
+    padding: 10px 55px 10px 10px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-wrapper
+    img {
+    height: 560px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content {
+    padding-right: 45px;
+    left: 40px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    h4 {
+    font-size: 22px;
+    margin-bottom: 48px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    img {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-heading {
+    font-size: 24px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content {
+    padding: 12px 30px 12px 12px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    img {
+    padding: 16px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    p {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    h6 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /*************** GRIEVANCE REDRESSAL MECHANISM SECTION CSS ***************/
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card {
+    min-height: 400px;
+  }
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card-body h5 {
+    font-size: 24px;
+    padding: 14px 36px;
+    width: 160px;
+  }
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card-body h6 {
+    font-size: 20px;
+  }
+
+  /******************************************************/
+  /********** TECHNOLOGY PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TECHNOLOGY CAPITAL SECTION CSS ***************/
+
+  .technology-capital-section .work-card-body h5 {
+    font-size: 20px;
+  }
+}
+
+/******************************************************/
+/********** MEDIA QUERY MAX-WIDTH : 991PX CSS STARTED **********/
+
+@media (max-width: 991px) {
+  /* =============== HEADINGS ================== */
+
+  .main-heading {
+    font-size: 28px;
+  }
+
+  /*************** HEADER SECTION CSS ***************/
+
+  header .topbar {
+    padding: 14px 0 14px 40px;
+  }
+
+  header .topbar ul li span {
+    font-size: 12px;
+  }
+
+  header .navbar {
+    padding: 12px 0;
+  }
+
+  /*************** HERO SECTION CSS ***************/
+
+  .main-carousel-section .carousel-content {
+    height: 330px;
+  }
+
+  .main-carousel-section .carousel-content .carousel-text {
+    padding: 35px 0;
+    max-width: 620px;
+  }
+
+  .main-carousel-section .carousel-content .carousel-text p {
+    font-size: 28px;
+    line-height: 54px;
+  }
+
+  /*************** ABOUT US SECTION CSS ***************/
+
+  .about-us-section-top h4 + p {
+    font-size: 16px;
+  }
+
+  .about-us-section-top p:last-child span {
+    font-size: 12px;
+  }
+
+  .about-us-section-bottom {
+    margin: 70px 0 120px;
+  }
+
+  .about-us-section-bottom .right-content {
+    padding: 20px;
+  }
+
+  .about-us-section-bottom .right-content p {
+    font-size: 12px;
+  }
+
+  /*************** FOUNDER SECTION CSS ***************/
+
+  .founder-section-left .card-body {
+    padding: 15px 20px;
+  }
+
+  .founder-section-left .card-body .card-text {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .founder-section-left .card-body .card-text span {
+    font-size: 16px;
+  }
+
+  .founder-section-right {
+    padding: 210px 45px 115px 85px;
+  }
+
+  .founder-section-right p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .founder-section-right p::before {
+    top: 255px;
+    left: -20;
+    font-size: 240px;
+  }
+
+  .founder-section-right p::after {
+    right: -15px;
+    bottom: 135px;
+    font-size: 240px;
+  }
+
+  /*************** IMPACT SECTION CSS ***************/
+
+  .impact-section {
+    height: 360px;
+    margin-top: -270px;
+  }
+
+  .impact-section .impact-card-wrapper {
+    bottom: -80px;
+    max-width: 690px;
+  }
+
+  .impact-section .impact-card {
+    min-height: 170px;
+    padding: 20px 7px;
+  }
+
+  .impact-section .impact-card .impact-card-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .impact-section .impact-card .impact-card-image img {
+    max-width: 70%;
+  }
+
+  .impact-section .impact-card-body h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .impact-section .impact-card-body p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /*************** VALUE SECTION CSS ***************/
+
+  .value-section {
+    margin: 180px 0 110px;
+  }
+
+  .value-cards-wrapper .value-card {
+    min-height: 470px;
+  }
+
+  .value-cards-wrapper .value-card-body {
+    padding: 30px 15px 20px;
+  }
+
+  .value-cards-wrapper .value-card-body h5 {
+    font-size: 24px;
+  }
+
+  .value-cards-wrapper .value-card-body h6 {
+    font-size: 17px;
+    margin: 10px 0;
+  }
+
+  .value-cards-wrapper .value-card-body p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  /*************** FOOTER SECTION CSS ***************/
+
+  .footer-section {
+    padding: 65px 0 45px;
+  }
+
+  .footer-section .footer-section-left {
+    max-width: 200px;
+  }
+
+  .footer-section .footer-section-left img {
+    margin-bottom: 20px;
+  }
+
+  .footer-section .footer-section-left p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .footer-section .footer-section-middle h6 {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .footer-section .footer-section-middle ul {
+    gap: 8px;
+  }
+
+  .footer-section .footer-section-middle ul li a {
+    font-size: 9px;
+  }
+
+  .footer-section .footer-section-right {
+    max-width: 210px;
+  }
+
+  .footer-section .footer-section-right .footer-card {
+    padding: 10px 15px;
+    gap: 12px;
+  }
+
+  .footer-section .footer-section-right .footer-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 12px;
+  }
+
+  .footer-section .footer-section-right .footer-card div p {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+  .footer-section .footer-section-right .footer-card div h6 {
+    font-size: 12px;
+  }
+
+  .footer-section hr {
+    margin: 50px 0;
+  }
+
+  .footer-section .footer-section-copyright {
+    font-size: 12px;
+  }
+
+  /**********************************************/
+  /********** PRESENCE PAGE CSS STARTED *********/
+  /**********************************************/
+
+  /*************** HERO SECTION CSS ***************/
+
+  .hero-section .hero-section-text {
+    padding: 50px 0;
+    width: 620px;
+  }
+
+  .hero-section .hero-section-text p {
+    font-size: 40px;
+  }
+
+  /*************** PARAGRAPH SECTION CSS ***************/
+
+  .paragraph-section p {
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  /*************** MAP SECTION CSS ***************/
+
+  .map-section {
+    /* padding-top: 30px; */
+    margin-bottom: 130px;
+  }
+
+  .map-section .map-section-left {
+    gap: 15px;
+  }
+
+  .map-section .map-section-left .map-section-card {
+    min-height: 90px;
+    gap: 10px;
+  }
+
+  .map-section .map-section-left .map-section-card h4 {
+    font-size: 32px;
+  }
+
+  .map-section .map-section-left .map-section-card p {
+    font-size: 14px;
+  }
+
+  .map-section .map-section-left .asOnDate {
+    font-size: 12px;
+  }
+
+  /******************************************************/
+  /********** PRODUCT AND SERVICES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CARD SECTION CSS ***************/
+
+  .product-card-section .product-card .card-image {
+    height: 170px;
+    padding: 40px 15px 20px;
+  }
+
+  .product-card-section .product-card .card-image h4 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .product-card-section .product-card .card-body .para-top {
+    min-height: 385px;
+  }
+
+  .product-card-section .product-card .card-body .para-top p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .product-card-section .product-card .card-body .card-stats-wrapper {
+    gap: 3px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat {
+    margin-bottom: 15px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    p {
+    font-size: 10px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
+    font-size: 10px;
+  }
+
+  .fs-12 {
+    font-size: 8px;
+  }
+
+  /******************************************************/
+  /********** PARTNERS AND ASSOCIATION PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** PARTNER SECTION CSS ***************/
+
+  .partner-section .nav-tabs .nav-item .nav-link {
+    font-size: 14px;
+    padding: 15px 8px;
+  }
+
+  .partner-section .tab-content {
+    max-width: 620px;
+  }
+
+  /******************************************************/
+  /********** POLICIES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** POLICY SECTION CSS ***************/
+
+  .policy-items-wrapper .policy-item {
+    padding: 0px 65px 0px 30px;
+    margin-bottom: 15px;
+  }
+
+  .policy-items-wrapper .policy-item h4 {
+    font-size: 14px;
+  }
+
+  .policy-items-wrapper .policy-item a {
+    min-height: 40px;
+    min-width: 110px;
+  }
+
+  .policy-items-wrapper .policy-item a span {
+    font-size: 14px;
+  }
+
+  .policy-section .view-more-btn {
+    font-size: 16px;
+  }
+
+  /******************************************************/
+  /********** TEAM PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TEAM SECTION CSS ***************/
+
+  .person-card-wrapper .person-card {
+    height: 320px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text {
+    height: 110px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text h4 {
+    font-size: 14px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text p {
+    font-size: 12px;
+  }
+
+  .person-card-overlay p {
+    color: var(--white);
+  }
+
+  .person-card-wrapper .person-card:hover .person-card-overlay {
+    height: 320px;
+  }
+
+  /******************************************************/
+  /********** CAREERS PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CAREER WORK SECTION CSS ***************/
+
+  .work-cards-wrapper .work-card {
+    margin-bottom: 25px;
+  }
+
+  .work-cards-wrapper .work-card-image img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .work-cards-wrapper .work-card-body {
+    padding: 15px 15px 5px;
+  }
+
+  .work-cards-wrapper .work-card-body h5 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .work-cards-wrapper .work-card-body p {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  /*************** CAREER VALUE SECTION CSS ***************/
+
+  .career-value-section {
+    margin-top: 80px;
+  }
+
+  /*************** CAREER IMAPCT SECTION CSS ***************/
+
+  .career-impact-section {
+    margin-top: -85px;
+  }
+
+  .career-impact-section .container .career-impact-as-on-date {
+    right: 40px;
+    top: 455px;
+  }
+
+  /*************** APPLY SECTION CSS ***************/
+
+  .apply-section {
+    margin: 210px 0px 90px;
+  }
+
+  .apply-section .container .apply-section-main-heading {
+    font-size: 32px;
+  }
+
+  .apply-section .container .apply-section-form .form-group label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .apply-section .container .apply-section-form .form-group input {
+    font-size: 10px;
+  }
+
+  .apply-section
+    .container
+    .apply-section-form
+    .form-group
+    .resume-button
+    .btn {
+    font-size: 12px;
+  }
+
+  .apply-section .container .apply-section-form .row .col-md-12 {
+    margin-top: 40px;
+  }
+
+  .apply-section .container .apply-section-form .row .col-md-12 button {
+    font-size: 12px;
+  }
+
+  /******************************************************/
+  /********** CONTACT US PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CONTACT FORM SECTION CSS ***************/
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
+    height: 440px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content {
+    padding-right: 30px;
+    left: 30px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
+    font-size: 10px;
+    margin-bottom: 20px;
+    line-height: 26px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    img {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact-section .container .contact-section-form .form-group label {
+    font-size: 12px;
+  }
+
+  .contact-section .container .contact-section-form .form-group input {
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+
+  .contact-section .container .contact-section-form .row .col-md-12 button {
+    padding: 10px 32px;
+    font-size: 16px;
+  }
+
+  /******************************************************/
+  /********** GRIEVANCE PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** GRIEVANCE REDRESSAL SECTION CSS ***************/
+
+  .grievance-redressal-section .container .grievance-redressal-section-content {
+    padding: 10px 40px 10px 10px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-wrapper
+    img {
+    height: 510px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content {
+    padding-right: 40px;
+    left: 30px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    img {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7 {
+    padding-left: 60px;
+    padding-right: 15px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-heading {
+    font-size: 18px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content {
+    padding: 12px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    img {
+    padding: 14px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    p {
+    font-size: 10px;
+  }
+
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  /*************** GRIEVANCE REDRESSAL MECHANISM SECTION CSS ***************/
+
+  .grievance-mechanism-section {
+    margin-top: 90px;
+  }
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card {
+    min-height: 400px;
+  }
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card-body h5 {
+    font-size: 22px;
+    padding: 12px 30px;
+    width: 150px;
+  }
+
+  .grievance-mechanism-card-wrapper .grievance-mechanism-card-body h6 {
+    font-size: 18px;
+  }
+
+  /******************************************************/
+  /********** TECHNOLOGY PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TECHNOLOGY CAPITAL SECTION CSS ***************/
+
+  .technology-capital-section .work-card-body h5 {
+    font-size: 18px;
+  }
+}
+
+/******************************************************/
+/********** MEDIA QUERY MAX-WIDTH : 767PX CSS STARTED **********/
+
+@media (max-width: 767px) {
+  /* =============== HEADINGS ================== */
+
+  .main-heading {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--black-33);
+  }
+
+  /*************** HEADER SECTION CSS ***************/
+
+  header .topbar {
+    padding: 16px 0 16px 0px;
+  }
+
+  header .topbar ul {
+    justify-content: space-around;
+  }
+
+  header .topbar ul li span {
+    font-size: 12px;
+  }
+
+  header .navbar-brand img {
+    max-width: 98px;
+    height: 32px;
+  }
+
+  /*************** HERO SECTION CSS ***************/
+
+  .main-carousel-section .carousel-content {
+    height: 250px;
+  }
+
+  .main-carousel-section .carousel-content .carousel-text {
+    padding: 15px 0;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .main-carousel-section .carousel-content .carousel-text p {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  /*************** ABOUT US SECTION CSS ***************/
+
+  .about-us-inner-section {
+    margin-top: 70px;
+  }
+
+  .about-us-section-top h4 + p {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .about-us-section-top p:last-child span {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .about-us-section-bottom {
+    margin: 50px 0 20px;
+  }
+
+  .about-us-section-bottom .left-content img {
+    padding-bottom: 30px;
+  }
+
+  .about-us-section-bottom .right-content {
+    padding: 30px;
+    /* max-width: 350px; */
+  }
+
+  .about-us-section-bottom .right-content p {
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  /*************** FOUNDER SECTION CSS ***************/
+
+  .founder-section {
+    padding: 65px 0 135px;
+  }
+
+  .founder-section-left .card {
+    max-width: 330px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .founder-section-left .card-body {
+    padding: 20px 40px;
+  }
+
+  .founder-section-left .card-body .card-text {
+    font-size: 21px;
+    line-height: normal;
+  }
+
+  .founder-section-left .card-body .card-text span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .founder-section-right {
+    position: relative;
+    padding: 115px 0px 115px;
+  }
+
+  .founder-section-right p {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .founder-section-right p::before {
+    top: 100px;
+    left: -10;
+  }
+
+  .founder-section-right p::after {
+    right: 0px;
+  }
+
+  /*************** IMPACT SECTION CSS ***************/
+
+  .impact-section {
+    height: 100%;
+    margin-top: -290px;
+    padding: 160px 0;
+    background-position: center;
+  }
+
+  .impact-section .main-heading {
+    color: var(--white);
+    padding-top: 25px;
+  }
+
+  .impact-section .impact-card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    bottom: 55px;
+    max-width: 100%;
+    position: static;
+    margin-top: 45px;
+  }
+
+  .impact-section .impact-card {
+    min-height: 145px;
+    padding: 17px 15px 10px;
+  }
+
+  .impact-section .impact-card .impact-card-image {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .impact-section .impact-card .impact-card-image img {
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+  }
+
+  .impact-section .impact-card-body h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .impact-section .impact-card-body p {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  /*************** VALUE SECTION CSS ***************/
+
+  .value-section {
+    margin: 110px 0 90px;
+  }
+
+  .value-section .main-heading {
+    margin-bottom: 40px;
+  }
+
+  .value-cards-wrapper .value-card {
+    flex-basis: calc(100% / 1);
+    min-height: 510px;
+  }
+
+  .value-cards-wrapper .value-card-body {
+    background-color: rgba(219, 34, 40, 0.1);
+    text-align: center;
+    color: var(--black-33);
+    padding: 40px 15px 50px;
+    flex-grow: 1;
+  }
+
+  .value-cards-wrapper .value-card-body h5 {
+    font-size: 26px;
+  }
+
+  .value-cards-wrapper .value-card-body h6 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .value-cards-wrapper .value-card-body p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /*************** FOOTER SECTION CSS ***************/
+
+  .footer-section {
+    padding: 70px 0 40px;
+  }
+
+  .footer-section .footer-section-left {
+    max-width: 100%;
+  }
+
+  .footer-section .footer-section-left img {
+    margin-bottom: 30px;
+  }
+
+  .footer-section .footer-section-left p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .footer-section .footer-section-middle h6 {
+    font-size: 16px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  .footer-section .footer-section-middle ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer-section .footer-section-middle ul li a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .footer-section .footer-section-middle.policy {
+    margin-top: 72px;
+  }
+
+  .footer-section .footer-section-right {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .footer-section .footer-section-right .footer-card {
+    padding: 20px 0 20px 35px;
+  }
+
+  .footer-section .footer-section-right .footer-card img {
+    width: 51px;
+    height: 51px;
+    padding: 14px;
+  }
+
+  .footer-section .footer-section-right .footer-card div p {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 5px;
+  }
+
+  .footer-section .footer-section-right .footer-card div h6 {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .footer-section hr {
+    margin: 50px 0;
+  }
+
+  /**********************************************/
+  /********** PRESENCE PAGE CSS STARTED *********/
+  /**********************************************/
+
+  /*************** HERO SECTION CSS ***************/
+
+  .hero-section .hero-section-text {
+    padding: 35px 0;
+    width: 350px;
+  }
+
+  .hero-section .hero-section-text p {
+    font-size: 24px;
+  }
+
+  /*************** PARAGRAPH SECTION CSS ***************/
+
+  .paragraph-section {
+    margin: 70px 0 50px;
+    padding: 0;
+  }
+
+  .paragraph-section p {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: justify;
+  }
+
+  /*************** MAP SECTION CSS ***************/
+
+  .map-section {
+    padding-top: 0px;
+    margin-bottom: 90px;
+  }
+
+  .map-section .container .row {
+    flex-direction: column-reverse;
+  }
+
+  .map-section .map-section-left {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .map-section .map-section-left .map-section-card {
+    width: 47%;
+    min-height: 110px;
+  }
+
+  .map-section .map-section-left .asOnDate {
+    display: none;
+  }
+
+  /******************************************************/
+  /********** PRODUCT AND SERVICES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CARD SECTION CSS ***************/
+
+  .product-card-section {
+    margin-bottom: 90px;
+  }
+
+  .product-card-section .product-card {
+    margin-bottom: 30px;
+  }
+
+  .product-card-section .product-card .card-image {
+    height: 210px;
+    padding: 50px 25px 25px;
+  }
+
+  .product-card-section .product-card .card-image h4 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .product-card-section .product-card .card-body {
+    padding: 35px 25px;
+  }
+
+  .product-card-section .product-card .card-body .para-top {
+    min-height: 170px;
+  }
+
+  .product-card-section .product-card .card-body .para-top p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .product-card-section .product-card .card-body .card-stats-wrapper {
+    margin-top: 20px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    p {
+    font-size: 14px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .fs-12 {
+    font-size: 12px;
+  }
+
+  /******************************************************/
+  /********** PARTNERS AND ASSOCIATION PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** PARTNER SECTION CSS ***************/
+
+  .partner-section {
+    margin: 50px 0 100px;
+  }
+
+  .partner-section .nav-tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner-section .nav-tabs .nav-item .nav-link {
+    font-size: 16px;
+    padding: 30px 0px;
+  }
+
+  .partner-section hr {
+    margin: 30px 0 55px;
+  }
+
+  .partner-section .tab-content {
+    flex-basis: calc((100% / 3) - 15px);
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .partner-section .product-tab-item {
+    gap: 14px;
+  }
+
+  .partner-section .product-tab-item img {
+    width: calc(33% - 10px);
+  }
+
+  /******************************************************/
+  /********** POLICIES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** POLICY SECTION CSS ***************/
+
+  .policy-section {
+    margin: 50px 0 90px;
+  }
+
+  .policy-section .main-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--black-00);
+    margin-bottom: 30px;
+  }
+
+  .policy-items-wrapper .policy-item {
+    padding: 4px 15px;
+    margin-bottom: 10px;
+  }
+
+  .policy-items-wrapper .policy-item h4 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .policy-items-wrapper .policy-item a {
+    max-height: 45px;
+    max-width: 130px;
+  }
+
+  .policy-items-wrapper .policy-item a span {
+    font-size: 13px;
+  }
+
+  /******************************************************/
+  /********** TEAM PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TEAM SECTION CSS ***************/
+
+  .team-section {
+    margin: 50px 0 90px;
+  }
+
+  .person-card-wrapper .person-card {
+    flex-basis: calc(100% / 1);
+    height: 480px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text {
+    height: 135px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text h4 {
+    font-size: 22px;
+  }
+
+  .person-card-wrapper .person-card .person-card-text p {
+    font-size: 14px;
+  }
+
+  .person-card-overlay p {
+    padding: 20px;
+  }
+
+  .person-card-wrapper .person-card:hover .person-card-overlay {
+    height: 480px;
+  }
+
+  /******************************************************/
+  /********** BOARD CSS STARTED **********/
+  /******************************************************/
+
+  /*************** BOARD SECTION CSS ***************/
+
+  .board-section {
+    margin: 50px 0 90px;
+  }
+
+  /******************************************************/
+  /********** CAREERS PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CAREER WORK SECTION CSS ***************/
+
+  .work-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+  }
+
+  .work-section .main-heading {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: var(--black-00);
+  }
+
+  .work-cards-wrapper .work-card {
+    flex-basis: calc(100% / 1);
+  }
+
+  .work-cards-wrapper .work-card-image img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .work-cards-wrapper .work-card-body h5 {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .work-cards-wrapper .work-card-body p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /*************** CAREER VALUE SECTION CSS ***************/
+
+  .career-value-section {
+    margin-top: 60px;
+  }
+
+  /*************** CAREER IMAPCT SECTION CSS ***************/
+
+  .career-impact-section {
+    display: none;
+  }
+
+  /*************** APPLY SECTION CSS ***************/
+
+  .apply-section {
+    display: none;
+  }
+
+  /******************************************************/
+  /********** CONTACT US PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CONTACT FORM SECTION CSS ***************/
+
+  .contact-section {
+    margin: 50px 0 90px;
+  }
+
+  .contact-section .container .contact-section-form {
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    padding: 0px;
+  }
+
+  .contact-section .container .contact-section-form > .row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper {
+    margin-top: 40px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
+    width: 100%;
+    height: 460px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content {
+    padding-right: 35px;
+    top: 90px;
+    left: 50px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 30px;
+  }
+
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    img {
+    margin-right: 20px;
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-section .container .contact-section-form .row .col-md-8 {
+    margin-top: 50px;
+    padding: 0px 25px;
+  }
+
+  .contact-section .container .contact-section-form .form-group label {
+    font-size: 16px;
+  }
+
+  .contact-section .container .contact-section-form .form-group input {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .contact-section .container .contact-section-form .row .col-md-12 {
+    margin-top: 0px;
+  }
+
+  .contact-section .container .contact-section-form .row .col-md-12 button {
+    margin-top: 10px;
+    padding: 15px 48px;
+    font-size: 24px;
+  }
+
+  /******************************************************/
+  /********** GRIEVANCE PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** GRIEVANCE REDRESSAL SECTION CSS ***************/
+
+  .grievance-redressal-section {
+    display: none;
+  }
+
+  /*************** GRIEVANCE REDRESSAL MECHANISM SECTION CSS ***************/
+
+  .grievance-mechanism-section {
+    display: none;
+  }
+
+  /******************************************************/
+  /********** TECHNOLOGY PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** TECHNOLOGY PARAGRAPH SECTION CSS ***************/
+
+  .technology-para-section {
+    display: none;
+  }
+
+  /*************** TECHNOLOGY CAPITAL SECTION CSS ***************/
+
+  .technology-capital-section {
+    display: none;
+  }
+}
+
 
 .fade-in {
   transition: opacity 1s linear;

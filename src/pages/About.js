@@ -1,16 +1,19 @@
 import React from 'react'
 import objects from './images/OBJECTS.png'
 import team03 from './images/team-03 1.png'
+import indexFocusSegment from "./images/index-focus-segment-img.png"
+import indexFounderImage from "./images/index-founder-img.png"
 import './style.css'
 
 function About() {
     return (
         <div>
-            <section className="about-us-section">
-                <div className="about-us-inner-section">
-                    <div className="container">
-                        <div className="about-us-section-top">
-                            <h4 className="main-heading">ABOUT US</h4>
+            {/* <!-- *************** ABOUT US SECTION STARTS *************** --> */}
+            <section class="about-us-section">
+                <div class="about-us-inner-section">
+                    <div class="container">
+                        <div class="about-us-section-top">
+                            <h4 class="main-heading">ABOUT US</h4>
                             <p>
                                 We are one of the oldest and largest microfinance companies in
                                 India.
@@ -30,16 +33,16 @@ function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="about-us-section-bottom">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-md-6">
-                                    <div className="left-content">
-                                        <img src={objects} />
+                    <div class="about-us-section-bottom">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="left-content">
+                                        <img src={indexFocusSegment} />
                                     </div>
                                 </div>
-                                <div className="col-md-6">
-                                    <div className="right-content">
+                                <div class="col-md-6">
+                                    <div class="right-content">
                                         <p>
                                             In India, ~60% of the population still earns less than
                                             5 lakh per year, which equates to less than 1500
@@ -53,23 +56,23 @@ function About() {
                                         </p>
                                     </div>
                                 </div>
-                                {/* </div> */}
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                {/* </div> */}
+            </section >
 
             {/* <!-- *************** FOUNDER SECTION STARTS *************** --> */}
-            <section className="founder-section">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-4">
-                            <div className="founder-section-left">
-                                <div className="card">
-                                    <img src={team03} className="card-img-top" alt="" />
-                                    <div className="card-body">
-                                        <p className="card-text">
+            <section class="founder-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="founder-section-left">
+                                <div class="card">
+                                    <img src={indexFounderImage} class="card-img-top" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text">
                                             MR. SUNIL SACHDEVA<br />
                                             <span>FOUNDER, SVCL</span>
                                         </p>
@@ -77,8 +80,8 @@ function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-8">
-                            <div className="founder-section-right">
+                        <div class="col-md-8">
+                            <div class="founder-section-right">
                                 <p>
                                     <span>We are proud and humbled to be one of pioneers of the Indian
                                         microfinance industry.
