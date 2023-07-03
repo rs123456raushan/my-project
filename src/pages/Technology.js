@@ -1,5 +1,5 @@
 import React from 'react'
-import heroSectionTechnology from './images/hero-section-technology-img.png'
+import heroSectionTechnology from './images/hero-section-technology-img.webp'
 import tech1 from './images/technology-img1.png'
 import tech2 from './images/technology-img2.png'
 import tech3 from './images/technology-img3.png'

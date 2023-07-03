@@ -1,8 +1,8 @@
 import React from 'react'
-import heroSectionTeam from './images/hero-section-team-img.png'
-import teamAnand from './images/team-anand.png'
-import teamKapil from './images/team-kapil.png'
-import teamChandini from './images/team-chandini.png'
+import heroSectionTeam from './images/hero-section-team-img.webp'
+import teamAnand from './images/team-anand.webp'
+import teamKapil from './images/team-kapil.webp'
+import teamChandini from './images/team-chandini.webp'
 import './style.css'
 
 function Team() {

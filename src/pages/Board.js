@@ -1,11 +1,11 @@
 import React from 'react'
-import heroSectionBoard from './images/hero-section-board-img.png'
-import boardSunil from './images/board-sunil.png'
-import boardVijay from './images/board-vijay.png'
-import boardMeeta from './images/board-meeta.png'
-import boardKalpataru from './images/board-kalpataru.png'
-import boardAnil from './images/board-anil.png'
-import boardVivek from './images/board-vivek.png'
+import heroSectionBoard from './images/hero-section-board-img.webp'
+import boardSunil from './images/board-sunil.webp'
+import boardVijay from './images/board-vijay.webp'
+import boardMeeta from './images/board-meeta.webp'
+import boardKalpataru from './images/board-kalpataru.webp'
+import boardAnil from './images/board-anil.webp'
+import boardVivek from './images/board-vivek.webp'
 import './style.css'
 
 function Board() {

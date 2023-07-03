@@ -2,7 +2,7 @@ import React from 'react'
 import objects from './images/OBJECTS.png'
 import team03 from './images/team-03 1.png'
 import indexFocusSegment from "./images/index-focus-segment-img.png"
-import indexFounderImage from "./images/index-founder-img.png"
+import indexFounderImage from "./images/index-founder-img.webp"
 import './style.css'
 
 function About() {

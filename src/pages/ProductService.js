@@ -1,5 +1,5 @@
 import React from 'react'
-import heroSectionProductImg from './images/hero-section-poducts-img.png'
+import heroSectionProductImg from './images/hero-section-poducts-img.webp'
 import './style.css'
 
 function ProductService() {

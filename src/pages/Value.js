@@ -1,9 +1,9 @@
 import React from 'react'
-import valueCardImg1 from './images/value-card-img1.png'
-import valueCardImg2 from './images/value-card-img2.png'
-import valueCardImg3 from './images/value-card-img3.png'
-import valueCardImg4 from './images/value-card-img4.png'
-import valueCardImg5 from './images/value-card-img5.png'
+import valueCardImg1 from './images/value-card-img1.webp'
+import valueCardImg2 from './images/value-card-img2.webp'
+import valueCardImg3 from './images/value-card-img3.webp'
+import valueCardImg4 from './images/value-card-img4.webp'
+import valueCardImg5 from './images/value-card-img5.webp'
 import './style.css'
 
 function Value({ valuesection }) {

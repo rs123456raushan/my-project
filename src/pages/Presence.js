@@ -1,5 +1,5 @@
 import React from 'react'
-import heroSectionPresenceImg from './images/hero-section-presence-img.png'
+import heroSectionPresenceImg from './images/hero-section-presence-img.webp'
 import frame from './images/Frame.png'
 import './style.css'
 

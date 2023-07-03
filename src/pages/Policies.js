@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import heroSectionPolicy from './images/hero-section-policy-img.png'
+import heroSectionPolicy from './images/hero-section-policy-img.webp'
 import policyLink from './images/plocy-link-icon.png'
 import './style.css'
 

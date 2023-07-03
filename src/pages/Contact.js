@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import heroSectionContact from './images/hero-section-contact-img.png'
+import heroSectionContact from './images/hero-section-contact-img.webp'
 import contactBg from './images/contact-bg-img.png'
 import contactPhone from './images/contact-phone.png'
 import contactEmail from './images/contact-email.png'

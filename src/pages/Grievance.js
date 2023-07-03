@@ -1,5 +1,5 @@
 import React from 'react'
-import heroSectionGrievance from './images/hero-section-grievance-img.png'
+import heroSectionGrievance from './images/hero-section-grievance-img.webp'
 import contactBg from './images/contact-bg-img.png'
 import contactPhone from './images/contact-phone.png'
 import contactEmail from './images/contact-email.png'

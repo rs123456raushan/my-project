@@ -361,7 +361,7 @@ header .collapse ul li .active {
 /*************** IMPACT SECTION CSS ***************/
 
 .impact-section {
-  background-image: url(images/impact-cut-img.png);
+  background-image: url(images/impact-cut-img.webp);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -495,7 +495,7 @@ header .collapse ul li .active {
 /*************** FOOTER SECTION CSS ***************/
 
 .footer-section {
-  background-image: url(images/footer-bg-img.png);
+  background-image: url(images/footer-bg-img.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -713,7 +713,7 @@ header .collapse ul li .active {
 }
 
 .product-card-section .product-card .card-image {
-  background-image: url(images/services-card-img.png);
+  background-image: url(images/services-card-img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 240px;

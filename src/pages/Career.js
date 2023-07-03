@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Impact from './Impact'
 import Value from './Value'
-import heroSectionCareer from './images/hero-section-careers-img.png'
+import heroSectionCareer from './images/hero-section-careers-img.webp'
 import careerWork1 from './images/careers-work-img1.png'
 import careerWork2 from './images/careers-work-img2.png'
 import careerWork3 from './images/careers-work-img3.png'
