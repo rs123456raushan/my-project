@@ -6,10 +6,10 @@ import valueCardImg4 from './images/value-card-img4.png'
 import valueCardImg5 from './images/value-card-img5.png'
 import './style.css'
 
-function Value({valuesection}) {
+function Value({ valuesection }) {
     return (
         <div>
-            <section className={valuesection?"value-section career-value-section d-md-block d-none":"value-section d-md-block d-none"}>
+            <section className={valuesection ? "value-section career-value-section d-md-block d-none" : "value-section d-md-block d-none"}>
                 <div className="container">
                     <div className="main-heading">OUR VALUES</div>
                     <div className="card-wrapper">

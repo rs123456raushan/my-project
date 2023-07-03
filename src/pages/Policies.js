@@ -90,7 +90,11 @@ function Policies() {
                             }
                         </div>
                         <div className="text-center">
-                            <button className="view-more-btn" onClick={showMore}>View More</button>
+                            {
+                                (numberOfItemsShown < policies.length) && (
+                                    <button className="view-more-btn" onClick={showMore}>View More</button>
+                                )
+                            }
                         </div>
                     </div>
                 </section>

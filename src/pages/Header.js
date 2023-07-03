@@ -52,10 +52,16 @@ function Header() {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li>
-                                            <a className="dropdown-item" href="#">Home</a>
+                                            {/* <a className="dropdown-item" href="#">Policies</a> */}
+                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/policies">Policies</NavLink>
                                         </li>
                                         <li>
-                                            <a className="dropdown-item" href="#">About</a>
+                                            {/* <a className="dropdown-item" href="#">Board</a> */}
+                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/board">Board</NavLink>
+                                        </li>
+                                        <li>
+                                            {/* <a className="dropdown-item" href="#">Fair Practices</a> */}
+                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/policies">Fair Practices</NavLink>
                                         </li>
                                     </ul>
                                 </li>
@@ -67,8 +73,14 @@ function Header() {
                                         Reach Us
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">Home</a></li>
-                                        <li><a className="dropdown-item" href="#">About</a></li>
+                                        <li>
+                                            {/* <a className="dropdown-item" href="#">Home</a> */}
+                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/contact">Contact Us</NavLink>
+                                        </li>
+                                        <li>
+                                            {/* <a className="dropdown-item" href="#">About</a> */}
+                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/grievance">Customer Grievance</NavLink>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
