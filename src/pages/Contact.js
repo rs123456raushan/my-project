@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
 import heroSectionContact from './images/hero-section-contact-img.webp'
-import contactBg from './images/contact-bg-img.png'
+import contactBg from './images/contact-bg-img.jpg'
 import contactPhone from './images/contact-phone.png'
 import contactEmail from './images/contact-email.png'
 import contactLocation from './images/contact-location.png'
 import validator from 'validator'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './style.css'
 
 function Contact() {
     const [phoneError, setPhoneError] = useState('')
     const [emailError, setEmailError] = useState('')
+    const [firstName, setFirstName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [message, setMessage] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
 
@@ -21,7 +26,7 @@ function Contact() {
         if (validator.isEmail(email)) {
             setEmailError('')
         } else {
-            setEmailError('Enter valid Email!')
+            setEmailError('Enter valid Email !')
         }
     }
 
@@ -33,7 +38,16 @@ function Contact() {
         if (validator.isMobilePhone(phone)) {
             setPhoneError('');
         } else {
-            setPhoneError('Enter your valid Phone Number!');
+            setPhoneError('Enter your valid Phone Number !');
+        }
+    }
+
+    const handleClick = (e) => {
+        if (email === '' || phone === '' || firstName === '' || lastName === '' || message === '') {
+            toast.error('Fill all the details !', {
+                position: toast.POSITION.TOP_RIGHT
+            });
+            e.preventDefault();
         }
     }
 
@@ -76,10 +90,11 @@ function Contact() {
                                         <div className="row">
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <label for="firstName"
+                                                    <label htmlFor="firstName"
                                                     >First Name <span>(optional)</span></label
                                                     >
                                                     <input
+                                                        onChange={(e) => setFirstName(e.target.value)}
                                                         type="text"
                                                         className="form-control"
                                                         id="firstName"
@@ -89,10 +104,11 @@ function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <label for="lastName"
+                                                    <label htmlFor="lastName"
                                                     >Last name <span>(optional)</span></label
                                                     >
                                                     <input
+                                                        onChange={(e) => setLastName(e.target.value)}
                                                         type="text"
                                                         className="form-control"
                                                         id="lastName"
@@ -102,7 +118,7 @@ function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <label for="Email">Email <span>(optional)</span></label>
+                                                    <label htmlFor="Email">Email <span>(optional)</span></label>
                                                     <input
                                                         type="email"
                                                         className="form-control"
@@ -114,21 +130,22 @@ function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <label for="phoneNumber">Phone number</label>
+                                                    <label htmlFor="phoneNumber">Phone number</label>
                                                     <input
                                                         type="text"
                                                         className="form-control"
                                                         id="phoneNumber"
                                                         placeholder="+1 102 3456 789"
                                                         onChange={(e) => validatePhone(e)}
-                                                    /> 
+                                                    />
                                                     <span style={{ fontWeight: 'bold', color: 'red' }}>{phone.length > 0 && phoneError}</span>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group">
-                                                    <label for="message">Message</label>
+                                                    <label htmlFor="message">Message</label>
                                                     <input
+                                                        onChange={(e) => setMessage(e.target.value)}
                                                         type="text"
                                                         className="form-control"
                                                         id="message"
@@ -136,10 +153,13 @@ function Contact() {
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-md-12 contact-submit-button">
-                                                <button type="submit" className="btn btn-primary">
-                                                    Submit
-                                                </button>
+                                            <div>
+                                                <div className="col-md-12 contact-submit-button">
+                                                    <button type="submit" onClick={handleClick} className="btn btn-primary">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                                <ToastContainer />
                                             </div>
                                         </div>
                                     </form>

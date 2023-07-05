@@ -1,15 +1,15 @@
 import React from 'react'
-import valueCardImg1 from './images/value-card-img1.webp'
-import valueCardImg2 from './images/value-card-img2.webp'
-import valueCardImg3 from './images/value-card-img3.webp'
-import valueCardImg4 from './images/value-card-img4.webp'
-import valueCardImg5 from './images/value-card-img5.webp'
+import valueCardImg1 from './images/value-card-img1.jpg'
+import valueCardImg2 from './images/value-card-img2.jpg'
+import valueCardImg3 from './images/value-card-img3.jpg'
+import valueCardImg4 from './images/value-card-img4.jpg'
+import valueCardImg5 from './images/value-card-img5.jpg'
 import './style.css'
 
-function Value({ valuesection }) {
+function Value({ valueSection }) {
     return (
         <div>
-            <section className={valuesection ? "value-section career-value-section d-md-block d-none" : "value-section d-md-block d-none"}>
+            <section className={valueSection ? "value-section career-value-section d-md-block d-none" : "value-section d-md-block d-none"}>
                 <div className="container">
                     <div className="main-heading">OUR VALUES</div>
                     <div className="card-wrapper">
@@ -95,7 +95,7 @@ function Value({ valuesection }) {
                 </div>
             </section>
 
-            <section className="value-mobile-section d-md-none d-block">
+            <section className="value-mobile-section carrer-value-mobile-section d-md-none d-block">
                 <div className="container">
                     <div className="main-heading">OUR VALUES</div>
                     <div id="carouselExampleIndicators" className="carousel slide">

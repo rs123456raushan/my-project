@@ -67,10 +67,10 @@ function About() {
             <section className="founder-section">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-md-4">
+                        <div className="col-md-4 pe-0 ps-0">
                             <div className="founder-section-left">
-                                <div className="card">
-                                    <img src={indexFounderImage} className="card-img-top" alt="" />
+                                <div className="card border-0 rounded-0">
+                                    <img src={indexFounderImage} className="card-img-top border-0 rounded-0" alt="" />
                                     <div className="card-body">
                                         <p className="card-text">
                                             MR. SUNIL SACHDEVA<br />

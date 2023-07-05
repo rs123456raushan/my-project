@@ -35,19 +35,7 @@ function Board() {
                                 </div>
                                 <div className="person-card-overlay">
                                     <p>
-                                        He is a socially driven entrepreneur having in-depth
-                                        experience in setting up various projects with outstanding
-                                        achievements. “Medanta, the Medicity” an Asia famous hospital
-                                        with state of art medical facilities is one of the ventures
-                                        running successfully, helping society at large.Mr.Sachdeva, as
-                                        a visionary entrepreneur, had helped society with first public
-                                        private partnership in water distribution in Haryana.His other
-                                        business ventures are into financial services, infrastructure
-                                        development, technology and hospitality, flourishing at
-                                        national and international level.His power, vision, values,
-                                        charisma and intelligence all put together distinguish him as
-                                        a leader who has organized a group of people to achieve a
-                                        common goal.
+                                    He is a socially driven entrepreneur having in-depth experience in setting up various projects with outstanding achievements. “Medanta, the Medicity” an Asia famous hospital with state of art medical facilities is one of the ventures running successfully, helping society at large.Mr.Sachdeva, as a visionary entrepreneur, had helped society with first public private partnership in water distribution in Haryana.His other business ventures are into financial services, infrastructure development, technology and hospitality, flourishing at national and international level.His power, vision, values, charisma and intelligence all put together distinguish him as a leader who has organized a group of people to achieve a common goal.
                                     </p>
                                 </div>
                             </div>
@@ -59,19 +47,7 @@ function Board() {
                                 </div>
                                 <div className="person-card-overlay">
                                     <p>
-                                        He is a socially driven entrepreneur having in-depth
-                                        experience in setting up various projects with outstanding
-                                        achievements. “Medanta, the Medicity” an Asia famous hospital
-                                        with state of art medical facilities is one of the ventures
-                                        running successfully, helping society at large.Mr.Sachdeva, as
-                                        a visionary entrepreneur, had helped society with first public
-                                        private partnership in water distribution in Haryana.His other
-                                        business ventures are into financial services, infrastructure
-                                        development, technology and hospitality, flourishing at
-                                        national and international level.His power, vision, values,
-                                        charisma and intelligence all put together distinguish him as
-                                        a leader who has organized a group of people to achieve a
-                                        common goal.
+                                    As a promoter director, he is a very seasoned Global Banker and has handled prestigious assignments with MNC Banks and Financial Institutions.Mr.Parekh holds a Masters degree from Memphis State University, USA and over the years built valuable cross functional experience such as in marketing, credit and risk, strategic planning and business development. He has handled key international positions in financial sectors including President of International Consumer & Small Business Financial Services and Vice Chairman of American Express Bank.In his last assignment, he has been the Senior Managing Director, special projects at Temasek holdings(Pte) Ltd and Director of Fullerton Financial Holdings(Pte.), Singapore.
                                     </p>
                                 </div>
                             </div>
@@ -83,19 +59,7 @@ function Board() {
                                 </div>
                                 <div className="person-card-overlay">
                                     <p>
-                                        He is a socially driven entrepreneur having in-depth
-                                        experience in setting up various projects with outstanding
-                                        achievements. “Medanta, the Medicity” an Asia famous hospital
-                                        with state of art medical facilities is one of the ventures
-                                        running successfully, helping society at large.Mr.Sachdeva, as
-                                        a visionary entrepreneur, had helped society with first public
-                                        private partnership in water distribution in Haryana.His other
-                                        business ventures are into financial services, infrastructure
-                                        development, technology and hospitality, flourishing at
-                                        national and international level.His power, vision, values,
-                                        charisma and intelligence all put together distinguish him as
-                                        a leader who has organized a group of people to achieve a
-                                        common goal.
+                                    Ms. Meeta Makhan, is Founder and Director of Doundo Services Pvt Ltd, a sustainability solutions company, working with emerging technologies for prevention of climate change, converting public spaces into green in corporate buildings, helping individuals have their own organic vegetable gardens and promoting residential and corporate office rooftop solar. She has wide range of experience in Corporate and Investment Banking dealing with Large Indian Corporates, Multinationals and Medium and Small Enterprise companies across various regions in India.
                                     </p>
                                 </div>
                             </div>
@@ -107,19 +71,7 @@ function Board() {
                                 </div>
                                 <div className="person-card-overlay">
                                     <p>
-                                        He is a socially driven entrepreneur having in-depth
-                                        experience in setting up various projects with outstanding
-                                        achievements. “Medanta, the Medicity” an Asia famous hospital
-                                        with state of art medical facilities is one of the ventures
-                                        running successfully, helping society at large.Mr.Sachdeva, as
-                                        a visionary entrepreneur, had helped society with first public
-                                        private partnership in water distribution in Haryana.His other
-                                        business ventures are into financial services, infrastructure
-                                        development, technology and hospitality, flourishing at
-                                        national and international level.His power, vision, values,
-                                        charisma and intelligence all put together distinguish him as
-                                        a leader who has organized a group of people to achieve a
-                                        common goal.
+                                    Mr Anil Kumar Jha is B. Tech. in Mining from IIT(ISM), Dhanbad and M. Tech. in Mine Planning & Design from IIT(ISM), Dhanbad. He has three decades of experience under his belt in mine planning, production, management supervision direction and control of underground as well as open cast coal mines. He began his career in coal mining industry in 1983 in Central Coalfields Limited. He also served as General Manager in Central Coalfields Limited. He was Chairman & Managing Director of Coal India Limited (CIL).
                                     </p>
                                 </div>
                             </div>
@@ -131,19 +83,7 @@ function Board() {
                                 </div>
                                 <div className="person-card-overlay">
                                     <p>
-                                        He is a socially driven entrepreneur having in-depth
-                                        experience in setting up various projects with outstanding
-                                        achievements. “Medanta, the Medicity” an Asia famous hospital
-                                        with state of art medical facilities is one of the ventures
-                                        running successfully, helping society at large.Mr.Sachdeva, as
-                                        a visionary entrepreneur, had helped society with first public
-                                        private partnership in water distribution in Haryana.His other
-                                        business ventures are into financial services, infrastructure
-                                        development, technology and hospitality, flourishing at
-                                        national and international level.His power, vision, values,
-                                        charisma and intelligence all put together distinguish him as
-                                        a leader who has organized a group of people to achieve a
-                                        common goal.
+                                    Kalpataru Tripathy is a corporate lawyer with close to 25 years of experience. He is a Chemistry (Hons.) graduate from Utkal University, a law graduate from Delhi University, a PG Diploma holder in International Business Law from Indian Society of International Law, and has undertaken an Executive Education (Management) from Judge Business School, University of Cambridge. 
                                     </p>
                                 </div>
                             </div>
@@ -151,23 +91,11 @@ function Board() {
                                 <img src={boardVivek} alt="" />
                                 <div className="person-card-text">
                                     <h4>Mr. Vivek Goyal</h4>
-                                    <p>INDEPENDENT DIRECTOR</p>
+                                    <p>Non-INDEPENDENT DIRECTOR</p>
                                 </div>
                                 <div className="person-card-overlay">
                                     <p>
-                                        He is a socially driven entrepreneur having in-depth
-                                        experience in setting up various projects with outstanding
-                                        achievements. “Medanta, the Medicity” an Asia famous hospital
-                                        with state of art medical facilities is one of the ventures
-                                        running successfully, helping society at large.Mr.Sachdeva, as
-                                        a visionary entrepreneur, had helped society with first public
-                                        private partnership in water distribution in Haryana.His other
-                                        business ventures are into financial services, infrastructure
-                                        development, technology and hospitality, flourishing at
-                                        national and international level.His power, vision, values,
-                                        charisma and intelligence all put together distinguish him as
-                                        a leader who has organized a group of people to achieve a
-                                        common goal.
+                                    Mr. Vivek Goyal is a seasoned professional with almost 19 years of experience in varied lending eco systems. He carries expertise understanding of business and structural risks with ability to articulate and drive pragmatic solutions to maximize business returns. Mr. Goyal is a Post Graduate from S. P Jain Institute of Management & Research, Mumbai and carries versatility of experience with organizations of repute viz CRISIL, Citibank, Religare, Finvest, Roha Housing, Encore Asset Reconstruction Company & SMC Group. 
                                     </p>
                                 </div>
                             </div>

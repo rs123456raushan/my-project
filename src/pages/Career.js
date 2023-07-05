@@ -8,6 +8,8 @@ import careerWork3 from './images/careers-work-img3.png'
 import careerWork4 from './images/careers-work-img4.png'
 import careerWork5 from './images/careers-work-img5.png'
 import validator from 'validator'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './style.css'
 
 function Career() {
@@ -16,6 +18,11 @@ function Career() {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [mobile, setMobile] = useState('')
+    const [fullName, setFullName] = useState('');
+    const [role, setRole] = useState('');
+    const [date, setDate] = useState('');
+    const [years, setYears] = useState(null);
+    const [months, setMonths] = useState(null);
 
     // Email Validation
     const validateEmail = (e) => {
@@ -25,7 +32,7 @@ function Career() {
         if (validator.isEmail(email)) {
             setEmailError('')
         } else {
-            setEmailError('Enter valid Email!')
+            setEmailError('Enter valid Email !')
         }
     }
 
@@ -37,7 +44,7 @@ function Career() {
         if (validator.isMobilePhone(phone)) {
             setPhoneError('');
         } else {
-            setPhoneError('Enter your valid Phone Number!');
+            setPhoneError('Enter your valid Phone Number !');
         }
     }
 
@@ -49,9 +56,19 @@ function Career() {
         if (validator.isMobilePhone(mobile)) {
             setPhoneError('');
         } else {
-            setPhoneError('Enter your valid Mobile Number!');
+            setPhoneError('Enter your valid Mobile Number !');
         }
     }
+
+    const handleClick = (e) => {
+        if (email === '' || phone === '' || mobile === '' || fullName === '' || years === null || months === null || date === '' || role === '') {
+            toast.error('Fill all the details !', {
+                position: toast.POSITION.TOP_RIGHT
+            });
+            e.preventDefault();
+        }
+    }
+
     return (
         <div>
             <div className="main wrapper">
@@ -142,8 +159,9 @@ function Career() {
                                 <div className="row">
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="fullName">Full Name*</label>
+                                            <label htmlFor="fullName">Full Name*</label>
                                             <input
+                                                onChange={(e) => setFullName(e.target.value)}
                                                 type="text"
                                                 className="form-control"
                                                 id="fullName"
@@ -153,7 +171,7 @@ function Career() {
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="Email">Email*</label>
+                                            <label htmlFor="Email">Email*</label>
                                             <input
                                                 type="email"
                                                 className="form-control"
@@ -166,7 +184,7 @@ function Career() {
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="phoneNumber">Phone number*</label>
+                                            <label htmlFor="phoneNumber">Phone number*</label>
                                             <input
                                                 type="text"
                                                 className="form-control"
@@ -179,8 +197,9 @@ function Career() {
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="DOB">Date of birth*</label>
+                                            <label htmlFor="DOB">Date of birth*</label>
                                             <input
+                                                onChange={(e) => setDate(e.target.value)}
                                                 type="date"
                                                 className="form-control"
                                                 id="DOB"
@@ -190,23 +209,27 @@ function Career() {
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="mobileNumber">Mobile number</label>
+                                            <label htmlFor="mobileNumber">Mobile number</label>
                                             <input
                                                 type="text"
                                                 className="form-control"
                                                 id="mobileNumber"
                                                 placeholder="+91 -"
                                                 onChange={(e) => validateMobile(e)}
-                                            /> <br />
-                                            <span style={{ fontWeight: 'bold', color: 'red' }}>{mobile.length > 0 && phoneError}</span>
+                                            />{" "}
+                                            <br />
+                                            <span style={{ fontWeight: "bold", color: "red" }}>
+                                                {mobile.length > 0 && phoneError}
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="workExperience">Work experience</label>
+                                            <label htmlFor="workExperience">Work experience</label>
                                             <div className="row">
                                                 <div className="col-md-6">
                                                     <input
+                                                        onChange={(e) => setYears(e.target.value)}
                                                         type="text"
                                                         className="form-control"
                                                         id="workExperience"
@@ -215,6 +238,7 @@ function Career() {
                                                 </div>
                                                 <div className="col-md-6">
                                                     <input
+                                                        onChange={(e) => setMonths(e.target.value)}
                                                         type="text"
                                                         className="form-control"
                                                         id="workExperience"
@@ -226,18 +250,28 @@ function Career() {
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="role">Role</label>
-                                            <input
+                                            <label htmlFor="role">Role</label>
+                                            {/* <input
                                                 type="text"
                                                 className="form-control"
                                                 id="role"
                                                 placeholder="Lorem Ipsum"
-                                            />
+                      /> */}
+                                            <select
+                                                onChange={(e) => setRole(e.target.value)}
+                                                class="form-select"
+                                                aria-label="Default select example"
+                                            >
+                                                <option selected>Select Role</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div className="col-md-3">
                                         <div className="form-group">
-                                            <label for="resume">Resume</label>
+                                            <label htmlFor="resume">Resume</label>
                                             <div className="resume-button">
                                                 <input type="file" id="myFileInput" style={{ display: 'none' }} />
                                                 <button type="button" onClick={() => document.getElementById('myFileInput').click()} className="btn">Upload</button>
@@ -245,10 +279,13 @@ function Career() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <button type="submit" className="btn btn-primary">Submit</button>
+                                <div>
+                                    <div className="row">
+                                        <div className="col-md-12">
+                                            <button type="submit" onClick={handleClick} className="btn btn-primary">Submit</button>
+                                        </div>
                                     </div>
+                                    <ToastContainer />
                                 </div>
                             </form>
                         </div>

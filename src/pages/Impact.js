@@ -69,6 +69,7 @@ function Impact({ impactSection }) {
                                 <p className="impact-card-text">AUM</p>
                             </div>
                         </div>
+                        <p className='impact-section-date'>Data as on 31st March 2023</p>
                     </div>
                 </div>
             </section>
