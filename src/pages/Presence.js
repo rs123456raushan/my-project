@@ -40,22 +40,7 @@ function Presence() {
                             <div className="col-md-4">
                                 <div className="map-section-left">
                                     <div className="map-section-card">
-                                        <h4>
-                                            {
-                                                '10'
-                                                    .split("")
-                                                    .map(function (char, index) {
-                                                        const style = { "animation-delay": (0.5 + index / 10) + "s" };
-                                                        return <span
-                                                            className='anime'
-                                                            aria-hidden="true"
-                                                            key={Math.random() * 100}
-                                                            style={style}>
-                                                            {char}
-                                                        </span>;
-                                                    })
-                                            }
-                                        </h4>
+                                        <h4>10</h4>
                                         <p>STATES</p>
                                     </div>
                                     <div className="map-section-card">

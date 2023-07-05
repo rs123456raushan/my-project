@@ -14,6 +14,7 @@ import './style.css'
 
 function Career() {
     const [phoneError, setPhoneError] = useState('')
+    const [mobileError, setMobileError] = useState('')
     const [emailError, setEmailError] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
@@ -54,9 +55,9 @@ function Career() {
         setMobile(e.target.value)
 
         if (validator.isMobilePhone(mobile)) {
-            setPhoneError('');
+            setMobileError('');
         } else {
-            setPhoneError('Enter your valid Mobile Number !');
+            setMobileError('Enter your valid Mobile Number !');
         }
     }
 
@@ -219,7 +220,7 @@ function Career() {
                                             />{" "}
                                             <br />
                                             <span style={{ fontWeight: "bold", color: "red" }}>
-                                                {mobile.length > 0 && phoneError}
+                                                {mobile.length > 0 && mobileError}
                                             </span>
                                         </div>
                                     </div>
