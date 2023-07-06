@@ -61,7 +61,7 @@ function Header() {
                                         </li>
                                         <li>
                                             {/* <a className="dropdown-item" href="#">Fair Practices</a> */}
-                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/policies">Fair Practices</NavLink>
+                                            <NavLink className='dropdown-item' style={{background: 'none'}} to="/fair-practices">Fair Practices</NavLink>
                                         </li>
                                     </ul>
                                 </li>

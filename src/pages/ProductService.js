@@ -66,7 +66,7 @@ function ProductService() {
                                             </div>
                                             <div className="card-stat">
                                                 <p>Frequency</p>
-                                                <h6><span className="fs-12">weekly – biweekly – monthly</span></h6>
+                                                <h6><span>weekly – biweekly – monthly</span></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -92,15 +92,15 @@ function ProductService() {
                                         <div className="card-stats-wrapper">
                                             <div className="card-stat">
                                                 <p>Amount</p>
-                                                <h6>₹ 15,000 – 75,000</h6>
+                                                <h6>₹ 3300 – 8300</h6>
                                             </div>
                                             <div className="card-stat">
                                                 <p>Tenure</p>
-                                                <h6>12 - 36 months</h6>
+                                                <h6>12 - 24 months</h6>
                                             </div>
                                             <div className="card-stat">
                                                 <p>Interest</p>
-                                                <h6>19 - 29 %</h6>
+                                                <h6>26 - 28 %</h6>
                                             </div>
                                             <div className="card-stat">
                                                 <p>Processing fees</p>
@@ -108,7 +108,7 @@ function ProductService() {
                                             </div>
                                             <div className="card-stat">
                                                 <p>Frequency</p>
-                                                <h6><span>14 Days/28 Days</span></h6>
+                                                <h6><span>weekly – biweekly – monthly</span></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ function ProductService() {
                                         <div className="card-stats-wrapper">
                                             <div className="card-stat">
                                                 <p>Amount</p>
-                                                <h6>₹ 15,000 – 75,000</h6>
+                                                <h6>₹ 75,000 – 150,000</h6>
                                             </div>
                                             <div className="card-stat">
                                                 <p>Tenure</p>
@@ -142,7 +142,7 @@ function ProductService() {
                                             </div>
                                             <div className="card-stat">
                                                 <p>Interest</p>
-                                                <h6>19 - 29 %</h6>
+                                                <h6>26 - 28 %</h6>
                                             </div>
                                             <div className="card-stat">
                                                 <p>Processing fees</p>
@@ -150,7 +150,7 @@ function ProductService() {
                                             </div>
                                             <div className="card-stat">
                                                 <p>Frequency</p>
-                                                <h6><span>14 Days/28 Days</span></h6>
+                                                <h6><span>weekly – biweekly – monthly</span></h6>
                                             </div>
                                         </div>
                                     </div>
