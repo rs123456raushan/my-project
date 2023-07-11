@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import footerLogo from "./images/footer-logo.png";
 import footerMailIcon from "./images/footer-mail-icon.png";
 import footerPhoneIcon from "./images/footer-phone-icon.png";
@@ -7,6 +7,11 @@ import { NavLink } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, [])
+
   return (
     // <!-- *************** FOOTER SECTION STARTS *************** -->
     <footer>
@@ -29,19 +34,19 @@ function Footer() {
                 <h6>Quick Links</h6>
                 <ul>
                   <li>
-                    <NavLink to="/home">Home</NavLink>
+                    <NavLink to="/home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/presence">Presence</NavLink>
+                    <NavLink to="/presence" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Presence</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products">Products</NavLink>
+                    <NavLink to="/products" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Products</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/technology">Technology</NavLink>
+                    <NavLink to="/technology" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Technology</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/partners">Partners</NavLink>
+                    <NavLink to="/partners" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Partners</NavLink>
                   </li>
                 </ul>
               </div>
@@ -51,19 +56,19 @@ function Footer() {
                 <h6>Quick Links</h6>
                 <ul>
                   <li>
-                    <NavLink to="/team">Team</NavLink>
+                    <NavLink to="/team" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Team</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/policies">Policies</NavLink>
+                    <NavLink to="/policies" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Policies</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/board">Board</NavLink>
+                    <NavLink to="/board" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Board</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/contact">Contact us</NavLink>
+                    <NavLink to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Contact us</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/grievance">Customer Grievance</NavLink>
+                    <NavLink to="/grievance" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Customer Grievance</NavLink>
                   </li>
                 </ul>
               </div>

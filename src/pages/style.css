@@ -3797,21 +3797,21 @@ header .collapse ul li .active {
 .anime {
   position: relative;
   opacity: 0;
-  animation: move-text 1s forwards;
+  animation: move-text 3s forwards;
 }
 
 @keyframes move-text {
   0% {
-    bottom: -0.2em;
+    /* bottom: -0.2em; */
     opacity: 1;
   }
 
   50% {
-    bottom: 0.2em;
+    /* bottom: 0.2em; */
   }
 
   100% {
-    bottom: 0;
+    /* bottom: 0; */
     opacity: 1;
   }
 }
