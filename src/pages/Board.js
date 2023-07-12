@@ -5,7 +5,6 @@ import boardVijay from './images/board-vijay.webp'
 import boardMeeta from './images/board-meeta.webp'
 import boardKalpataru from './images/board-kalpataru.webp'
 import boardAnil from './images/board-anil.webp'
-import boardVivek from './images/board-vivek.webp'
 import './style.css'
 
 function Board() {
@@ -74,16 +73,6 @@ function Board() {
                                     <p className="person-role">INDEPENDENT DIRECTOR</p>
                                     <p className="person-description">
                                     Kalpataru Tripathy is a corporate lawyer with close to 25 years of experience. He is a Chemistry (Hons.) graduate from Utkal University, a law graduate from Delhi University, a PG Diploma holder in International Business Law from Indian Society of International Law, and has undertaken an Executive Education (Management) from Judge Business School, University of Cambridge. 
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="person-card">
-                                <img src={boardVivek} alt="" />
-                                <div className="person-card-text">
-                                    <h4>Mr. Vivek Goyal</h4>
-                                    <p className="person-role">Non-INDEPENDENT DIRECTOR</p>
-                                    <p className="person-description">
-                                    Mr. Vivek Goyal is a seasoned professional with almost 19 years of experience in varied lending eco systems. He carries expertise understanding of business and structural risks with ability to articulate and drive pragmatic solutions to maximize business returns. Mr. Goyal is a Post Graduate from S. P Jain Institute of Management & Research, Mumbai and carries versatility of experience with organizations of repute viz CRISIL, Citibank, Religare, Finvest, Roha Housing, Encore Asset Reconstruction Company & SMC Group. 
                                     </p>
                                 </div>
                             </div>

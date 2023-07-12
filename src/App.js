@@ -13,6 +13,7 @@ import Team from "./pages/Team";
 import Technology from "./pages/Technology";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
+import PolicyContent from "./pages/PolicyContent";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/policies" element={<Policies />}></Route>
           <Route exact path="/team" element={<Team />}></Route>
           <Route exact path="/technology" element={<Technology />}></Route>
+          <Route exact path="/policyContent" element={<PolicyContent />}></Route>
         </Routes>
         <div>
           <Footer />

@@ -2782,7 +2782,7 @@ header .collapse ul li .active {
   .person-card-wrapper .person-card .person-card-text {
     height: 110px;
     padding: 50px 15px 15px 15px;
-    text-align: justify;
+    /* text-align: justify; */
 
   }
 
@@ -3733,7 +3733,7 @@ header .collapse ul li .active {
 
   .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
     margin-right: 20px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     width: 24px;
     height: 24px;
   }

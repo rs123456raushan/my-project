@@ -15,11 +15,11 @@ function Header() {
     setNavOpen((state) => !state);
   }
 
-    return (
-        <header>
-            <div className="topbar">
-                <div className="container">
-                    <ul>
+  return (
+    <header>
+      <div className="topbar">
+        <div className="container">
+          <ul>
             <li>
               <a href="tel:1800-120-9040">
                 <img src={phoneIcon} />
@@ -32,14 +32,14 @@ function Header() {
                 <span>info@svcl.in</span>
               </a>
             </li>
-                    </ul>
-                </div>
-            </div>
-            <div className="navbar-wrapper">
-                <nav className="navbar navbar-expand-lg">
-                    <div className="container">
-            <NavLink className="navbar-brand" to="/" onClick={()=>setNavOpen(false)}>
-                            <img src={headerLogo} alt="" />
+          </ul>
+        </div>
+      </div>
+      <div className="navbar-wrapper">
+        <nav className="navbar navbar-expand-lg">
+          <div className="container">
+            <NavLink className="navbar-brand" to="/" onClick={() => setNavOpen(false)}>
+              <img src={headerLogo} alt="" />
             </NavLink>
             <button
               onClick={toggleNav}
@@ -51,8 +51,8 @@ function Header() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
+              <span className="navbar-toggler-icon"></span>
+            </button>
             <div
               className={
                 navOpen
@@ -61,8 +61,8 @@ function Header() {
               }
               id="navbarNav"
             >
-                            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -71,8 +71,8 @@ function Header() {
                   >
                     Home
                   </NavLink>
-                                </li>
-                                <li className="nav-item">
+                </li>
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -81,8 +81,8 @@ function Header() {
                   >
                     Presence
                   </NavLink>
-                                </li>
-                                <li className="nav-item">
+                </li>
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -91,8 +91,8 @@ function Header() {
                   >
                     Products
                   </NavLink>
-                                </li>
-                                <li className="nav-item">
+                </li>
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -101,8 +101,8 @@ function Header() {
                   >
                     Technology
                   </NavLink>
-                                </li>
-                                <li className="nav-item">
+                </li>
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -111,8 +111,8 @@ function Header() {
                   >
                     Partners
                   </NavLink>
-                                </li>
-                                <li className="nav-item">
+                </li>
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -121,8 +121,8 @@ function Header() {
                   >
                     Team
                   </NavLink>
-                                </li>
-                                <li className="nav-item dropdown">
+                </li>
+                <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -130,11 +130,11 @@ function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                                        Governance
-                                    </a>
-                                    <ul className="dropdown-menu">
-                                        <li>
-                                            {/* <a className="dropdown-item" href="#">Policies</a> */}
+                    Governance
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      {/* <a className="dropdown-item" href="#">Policies</a> */}
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -143,9 +143,9 @@ function Header() {
                       >
                         Policies
                       </NavLink>
-                                        </li>
-                                        <li>
-                                            {/* <a className="dropdown-item" href="#">Board</a> */}
+                    </li>
+                    <li>
+                      {/* <a className="dropdown-item" href="#">Board</a> */}
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -154,9 +154,9 @@ function Header() {
                       >
                         Board
                       </NavLink>
-                                        </li>
-                                        <li>
-                                            {/* <a className="dropdown-item" href="#">Fair Practices</a> */}
+                    </li>
+                    <li>
+                      {/* <a className="dropdown-item" href="#">Fair Practices</a> */}
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -165,10 +165,10 @@ function Header() {
                       >
                         Fair Practices
                       </NavLink>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nav-item">
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     aria-current="page"
@@ -177,8 +177,8 @@ function Header() {
                   >
                     Careers
                   </NavLink>
-                                </li>
-                                <li className="nav-item dropdown">
+                </li>
+                <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -186,11 +186,11 @@ function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                                        Reach Us
-                                    </a>
-                                    <ul className="dropdown-menu">
-                                        <li>
-                                            {/* <a className="dropdown-item" href="#">Home</a> */}
+                    Reach Us
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      {/* <a className="dropdown-item" href="#">Home</a> */}
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -199,9 +199,9 @@ function Header() {
                       >
                         Contact Us
                       </NavLink>
-                                        </li>
-                                        <li>
-                                            {/* <a className="dropdown-item" href="#">About</a> */}
+                    </li>
+                    <li>
+                      {/* <a className="dropdown-item" href="#">About</a> */}
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -210,16 +210,16 @@ function Header() {
                       >
                         Customer Grievance
                       </NavLink>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-        </header>
-    )
+          </div>
+        </nav>
+      </div>
+    </header>
+  )
 }
 
 export default Header
