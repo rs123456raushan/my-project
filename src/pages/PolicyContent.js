@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './style.css'
+import { useLocation } from 'react-router-dom'
 
 function PolicyContent() {
+    const location = useLocation();
+
+    useEffect(() => {
+        console.log(location.state.title)
+    })
     return (
         <div className='container'>
-            <h1 className='main-heading'>LOREM IPSUM</h1>
+            <h1 className='main-heading'>{location.state.title}</h1>
             <p style={{ margin: "40px", marginBottom: "60px" }}>
                 Lorem ipsum dolor sit amet. Eum sapiente esse ut nemo asperiores aut ipsam libero et optio voluptatem sit molestiae nisi a molestias tempora. Eos enim iusto ea Quis magnam eos officiis deserunt sed ipsam sunt. A fugiat fugit rem iure aperiam est autem quaerat quo necessitatibus quasi in odit molestiae quo unde galisum At vitae iste? Aut exercitationem nulla et quis tenetur qui numquam quod et tempora atque.
                 Aut voluptatum galisum eos unde deserunt 33 iure iusto qui iure rerum ut animi quisquam quo minima laboriosam ab recusandae explicabo. Ut exercitationem nemo quo asperiores voluptatem est quos recusandae est dicta suscipit. Ut unde atque et cupiditate numquam sit perferendis blanditiis? Est provident recusandae qui saepe debitis et ullam eaque ut rerum dolore et ipsa iusto ad ipsam excepturi.

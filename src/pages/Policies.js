@@ -83,7 +83,16 @@ function Policies() {
                                             <div className="policy-item">
                                                 <h4>{policy.name}</h4>
                                                 {/* <a href=""><span>View </span> <img src={policyLink} alt="" /></a> */}
-                                                <NavLink onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} to='/policyContent'>
+                                                {/* <NavLink onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} to='/policyContent'>
+                                                    <span>View </span>
+                                                    <img src={policyLink} alt="" />
+                                                </NavLink> */}
+                                                <NavLink to='/policyContent'
+                                                    state={{
+                                                        title: policy.name
+                                                    }}
+                                                    onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+                                                    to='/policyContent'>
                                                     <span>View </span>
                                                     <img src={policyLink} alt="" />
                                                 </NavLink>
