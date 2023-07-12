@@ -12,7 +12,7 @@ function ProductService() {
                     <img src={heroSectionProductImg} alt="" />
                     <div className="hero-section-box">
                         <div className="hero-section-text">
-                            <p>Products and Services</p>
+                            <p>PRODUCTS AND SERVICES</p>
                         </div>
                     </div>
                 </section>

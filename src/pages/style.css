@@ -177,6 +177,10 @@ p {
   color: var(--black-00);
 }
 
+.styles-module_blinkingCursor__yugAC{
+  font-weight: 400!important;
+}
+
 /*************** HEADER SECTION CSS ***************/
 
 header .topbar {
@@ -194,6 +198,13 @@ header .topbar ul li {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+header .topbar ul li a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
 }
 
 header .topbar ul li img {
@@ -500,6 +511,10 @@ header .collapse ul li .active {
   margin-bottom: 5px;
 }
 
+.value-mobile-section .value-card {
+  min-height: 600px;
+}
+
 .value-cards-wrapper .value-card-image img,
 .value-mobile-section .value-card-image img {
   width: 100%;
@@ -635,6 +650,14 @@ header .collapse ul li .active {
   font-size: 16px;
   color: var(--black-33);
   line-height: 24px;
+}
+
+.footer-section .footer-section-right .footer-card div h6 a{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black-33);
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .footer-section hr {
@@ -1287,9 +1310,17 @@ header .collapse ul li .active {
   display: flex;
 }
 
+.contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p a{
+  font-size: 16px;
+  color: var(--white);
+  line-height: 30px;
+  display: flex;
+  text-decoration: none;
+}
+
 .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 3px;
   width: 24px;
   height: 24px;
 }
@@ -1409,9 +1440,17 @@ header .collapse ul li .active {
   display: flex;
 }
 
+.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+  font-size: 16px;
+  color: var(--white);
+  line-height: 30px;
+  display: flex;
+  text-decoration: none;
+}
+
 .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 3px;
   width: 24px;
   height: 24px;
 }
@@ -1459,6 +1498,14 @@ header .collapse ul li .active {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 a{
+  color: var(--black-33);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration: none;
 }
 
 /*************** GRIEVANCE REDRESSAL MECHANISM SECTION CSS ***************/
@@ -2275,6 +2322,10 @@ header .collapse ul li .active {
     margin-bottom: 36px;
   }
 
+  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+    font-size: 14px;
+  }
+
   .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
     margin-right: 15px;
     width: 20px;
@@ -2302,6 +2353,11 @@ header .collapse ul li .active {
   }
 
   .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 a{
     font-size: 16px;
     line-height: 26px;
   }
@@ -2855,6 +2911,11 @@ header .collapse ul li .active {
     line-height: 26px;
   }
 
+  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p a{
+    font-size: 10px;
+    line-height: 26px;
+  }
+
   .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
     margin-right: 10px;
     width: 15px;
@@ -2904,10 +2965,15 @@ header .collapse ul li .active {
     margin-bottom: 25px;
   }
 
+  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+    font-size: 12px;
+  }
+
   .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
     margin-right: 10px;
     width: 15px;
     height: 15px;
+    margin-top: 7px;
   }
 
   .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 {
@@ -2934,6 +3000,11 @@ header .collapse ul li .active {
   }
 
   .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 a{
     font-size: 12px;
     line-height: 20px;
   }
@@ -3004,6 +3075,9 @@ header .collapse ul li .active {
   /*************** HERO SECTION CSS ***************/
 
   .main-carousel-section .carousel-content {
+    background-image: url(images/hero-section-index-img-mobile.webp);
+    background-size: cover;
+    background-position: center;
     height: 350px;
   }
 
@@ -3479,7 +3553,7 @@ header .collapse ul li .active {
   }
 
   .person-card-wrapper .person-card .person-card-text h4 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
   }
@@ -3652,6 +3726,11 @@ header .collapse ul li .active {
     line-height: 30px;
   }
 
+  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p a{
+    font-size: 16px;
+    line-height: 30px;
+  }
+
   .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
     margin-right: 20px;
     margin-top: 5px;
@@ -3727,9 +3806,14 @@ header .collapse ul li .active {
     margin-bottom: 50px;
   }
 
+  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+    font-size: 16px;
+    line-height: 30px;
+  }
+
   .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 3px;
     width: 24px;
     height: 24px;
   }
@@ -3777,6 +3861,39 @@ header .collapse ul li .active {
   }
 
   /*************** TECHNOLOGY CAPITAL SECTION CSS ***************/
+}
+
+@media (max-width:380px) {
+  .person-card-wrapper .person-card .person-card-text{
+    height: 160px;
+  }
+
+  .person-card-wrapper .person-card {
+    flex-basis: calc(100% / 1);
+    height: 425px;
+  }
+  
+  .person-card-wrapper .person-card .person-card-text .person-description{
+    display: none;
+  }
+
+  .person-card-wrapper .person-card:hover .person-card-text {
+    height: 425px;
+  }
+  
+  .person-card-wrapper .person-card:hover .person-card-text .person-description{
+    display: block;
+    line-height: 22px;
+  }
+  
+  .person-card-wrapper .person-card:hover .person-card-text .person-role{
+    margin-bottom: 10px;
+  }
+
+  .person-card-wrapper .person-card:hover .person-card-text h4{
+    margin-bottom: 10px;
+  }
+
 }
 
 @media (max-width:370px) {

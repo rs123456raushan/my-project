@@ -3,6 +3,7 @@ import heroSectionTeam from "./images/hero-section-team-img.webp";
 import teamAnand from "./images/team-anand.webp";
 import teamKapil from "./images/team-kapil.webp";
 import teamChandini from "./images/team-chandini.webp";
+import teamSaurabh from "./images/team-saurabh.png"
 import "./style.css";
 
 function Team() {
@@ -44,7 +45,7 @@ function Team() {
                 </div>
               </div>
               <div className="person-card">
-                <img src={teamAnand} alt="" />
+                <img src={teamSaurabh} alt="" />
                 <div className="person-card-text">
                   <h4>Saurabh arora</h4>
                   <p className="person-role">Chief Finance Officer</p>

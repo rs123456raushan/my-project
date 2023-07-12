@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import valueCardImg1 from "./images/value-card-img1.jpg";
 import valueCardImg2 from "./images/value-card-img2.jpg";
 import valueCardImg3 from "./images/value-card-img3.jpg";
@@ -7,6 +7,15 @@ import valueCardImg5 from "./images/value-card-img5.jpg";
 import "./style.css";
 
 function Value({ valueSection }) {
+
+  const activeBtnClick = useRef(null);
+
+  useEffect(() => {
+    activeBtnClick.current.click();
+    // activeBtnClick.current.addEventListener('click', clickHandler);
+  }, []);
+
+
   return (
     <div>
       <section
@@ -108,7 +117,7 @@ function Value({ valueSection }) {
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              <div className="carousel-item active">
+              <div className="carousel-item active" data-bs-interval="2000">
                 <div className="value-card">
                   <div className="value-card-image">
                     <img src={valueCardImg1} alt="" />
@@ -124,7 +133,7 @@ function Value({ valueSection }) {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-bs-interval="2000">
                 <div className="value-card">
                   <div className="value-card-image">
                     <img src={valueCardImg2} alt="" />
@@ -139,7 +148,7 @@ function Value({ valueSection }) {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-bs-interval="2000">
                 <div className="value-card">
                   <div className="value-card-image">
                     <img src={valueCardImg3} alt="" />
@@ -155,7 +164,7 @@ function Value({ valueSection }) {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-bs-interval="2000">
                 <div className="value-card">
                   <div className="value-card-image">
                     <img src={valueCardImg4} alt="" />
@@ -173,7 +182,7 @@ function Value({ valueSection }) {
                   </div>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-bs-interval="2000">
                 <div className="value-card">
                   <div className="value-card-image">
                     <img src={valueCardImg5} alt="" />
@@ -197,6 +206,7 @@ function Value({ valueSection }) {
                 className="active"
                 aria-current="true"
                 aria-label="Slide 1"
+                ref={activeBtnClick}
               ></button>
               <button
                 type="button"

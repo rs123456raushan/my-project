@@ -5,12 +5,12 @@ import Value from './Value';
 import './style.css'
 
 function Home() {
-    var totalWomens = ["10,000", "27,000", "53,000"];
-    var businessNames = ["Kirana", "Dairy", "Tailoring"];
+    var totalWomens = ["45,000+", "120,000+", "35,000+"];
+    var businessNames = ["Kirana", "Dairy", "Farming"];
     // const [fadeProp, setFadeProp] = useState({
     //     fade: 'fade-in'
     // })
-    const [index, setIndex] = useState(0);
+    const [Index, setIndex] = useState(0);
 
     // useEffect(() => {
     //     const timeout = setInterval(() => {
@@ -52,7 +52,7 @@ function Home() {
                                     } */}
                                 we helped <strong id="totalWomens">
                                     {
-                                        totalWomens[index]
+                                        totalWomens[Index]
                                             .split("")
                                             .map(function (char, index) {
                                                 const style = { "animation-delay": (0.5 + index / 10) + "s" };
@@ -73,10 +73,15 @@ function Home() {
                                 </strong> business */}
                                 <strong id="businessNames">
                                     {
-                                        businessNames[index]
+                                        businessNames[Index]
                                             .split("")
                                             .map(function (char, index) {
-                                                const style = { "animation-delay": (0.5 + index / 10) + "s" };
+                                                let style = { "animation-delay": (0.5 + index / 10) + "s" };
+                                                if (Index === 0) {
+                                                    style = { "animation-delay": (0.5 + index / 8) + "s" };
+                                                } else if (Index === 1) {
+                                                    style = { "animation-delay": (0.5 + index / 5) + "s" };
+                                                }
                                                 return <span
                                                     className='anime'
                                                     aria-hidden="true"
@@ -101,9 +106,9 @@ function Home() {
                     {/* <!-- *************** VALUE SECTION STARTS *************** --> */}
                     <Value />
                 </div>
-            </div >
-        </div >
-    )
+            </div>
+        </div>
+    );
 }
 
 export default Home

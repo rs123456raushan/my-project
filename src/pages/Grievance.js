@@ -36,8 +36,8 @@ function Grievance() {
                                     </div>
                                     <div className="grievance-redressal-image-content">
                                         <h4>Contact details</h4>
-                                        <p><img src={contactPhone} />1800-120-9040</p>
-                                        <p><img src={contactEmail} />info@svcl.in</p>
+                                        <p><a href="tel:1800-120-9040"><img src={contactPhone} />1800-120-9040</a></p>
+                                        <p><a href="mailto:info@svcl.in"><img src={contactEmail} />info@svcl.in</a></p>
                                         <p>
                                             <img src={contactLocation} />5th Floor, Tower
                                             B, SAS Tower Medicity, Sector - 38, Gurugram Haryana, India
@@ -58,17 +58,17 @@ function Grievance() {
                                             </div>
                                         </div>
                                         <div className="grievance-card-content">
-                                            <img src={grievanceMail} />
+                                            <a href="mailto:info@svcl.in"><img src={grievanceMail} /></a>
                                             <div>
                                                 <p>Email</p>
-                                                <h6>info@svcl.in</h6>
+                                                <h6><a href="mailto:info@svcl.in">info@svcl.in</a></h6>
                                             </div>
                                         </div>
                                         <div className="grievance-card-content">
-                                            <img src={grievancePhone} />
+                                            <a href="tel:1800-120-9040"><img src={grievancePhone} /></a>
                                             <div>
-                                                <p>Contact No</p>
-                                                <h6>1800-120-9040</h6>
+                                                <p>Contact</p>
+                                                <h6><a href="tel:1800-120-9040">1800-120-9040</a></h6>
                                             </div>
                                         </div>
                                         <div className="grievance-card-content">

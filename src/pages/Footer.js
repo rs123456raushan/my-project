@@ -20,7 +20,9 @@ function Footer() {
           <div className="row">
             <div className="col-md-4 col-12">
               <div className="footer-section-left">
+                <a href="/">
                 <img src={footerLogo} />
+                </a>
                 <p>
                   Since 2010, we are on a{" "}
                   <strong> mission to enable and empower rural women</strong> in
@@ -76,17 +78,25 @@ function Footer() {
             <div className="col-md-4 col-12">
               <div className="footer-section-right">
                 <div className="footer-card">
+                  <a href="mailto:info@svcl.in">
                   <img src={footerMailIcon} />
+                  </a>
                   <div>
                     <p>Email id</p>
-                    <h6>info@svcl.in</h6>
+                    <h6>
+                      <a href="mailto:info@svcl.in">info@svcl.in</a>
+                    </h6>
                   </div>
                 </div>
                 <div className="footer-card">
+                  <a href="tel:1800-120-9040">
                   <img src={footerPhoneIcon} />
+                  </a>
                   <div>
                     <p>Contact</p>
-                    <h6>1800-120-9040</h6>
+                    <h6>
+                      <a href="tel:1800-120-9040">1800-120-9040</a>
+                    </h6>
                   </div>
                 </div>
                 <div className="footer-card">

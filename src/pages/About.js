@@ -94,7 +94,7 @@ function About() {
                 <p>
                   <span>
                     We are proud and humbled to be one of pioneers of the Indian
-                    microfinance industry. &nbsp;
+                    microfinance industry.&nbsp;
                     <strong>
                        With 30 lakh women borrowers served to date,
                     </strong>&nbsp;

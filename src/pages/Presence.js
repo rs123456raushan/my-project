@@ -2,6 +2,7 @@ import React from "react";
 import heroSectionPresenceImg from "./images/hero-section-presence-img1.webp";
 import presenceIndiaMap from "./images/presence-india-map.png";
 import "./style.css";
+import CountUp from "react-countup";
 
 function Presence() {
   return (
@@ -40,23 +41,63 @@ function Presence() {
               <div className="col-md-3">
                 <div className="map-section-left">
                   <div className="map-section-card">
-                    <h4>10</h4>
+                    <h4>
+                      <CountUp
+                        end={10}
+                        duration={2}
+                        enableScrollSpy={true}
+                        scrollSpyDelay={200}
+                        scrollSpyOnce={true}
+                      />
+                    </h4>
                     <p>STATES</p>
                   </div>
                   <div className="map-section-card">
-                    <h4>249</h4>
+                    <h4>
+                      <CountUp
+                        end={249}
+                        duration={2}
+                        enableScrollSpy={true}
+                        scrollSpyDelay={200}
+                        scrollSpyOnce={true}
+                      />
+                    </h4>
                     <p>BRANCHES</p>
                   </div>
                   <div className="map-section-card">
-                    <h4>148</h4>
+                    <h4>
+                      <CountUp
+                        end={148}
+                        duration={2}
+                        enableScrollSpy={true}
+                        scrollSpyDelay={200}
+                        scrollSpyOnce={true}
+                      />
+                    </h4>
                     <p>DISTRICTS</p>
                   </div>
                   <div className="map-section-card">
-                    <h4>35,515</h4>
+                    <h4>
+                      <CountUp
+                        end={35515}
+                        duration={2}
+                        enableScrollSpy={true}
+                        scrollSpyDelay={200}
+                        scrollSpyOnce={true}
+                      />
+                    </h4>
                     <p>NUMBER OF VILLAGES</p>
                   </div>
                   <div className="map-section-card">
-                    <h4>1054</h4>
+                    <h4>
+                      <CountUp
+                        end={1054}
+                        duration={2}
+                        enableScrollSpy={true}
+                        scrollSpyDelay={200}
+                        scrollSpyOnce={true}
+                      />
+                    </h4>
                     <p>NUMBER OF LOAN OFFICERS</p>
                   </div>
                   <p className="asOnDate">Data as on 31st March 2023</p>

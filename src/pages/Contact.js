@@ -79,9 +79,21 @@ function Contact() {
                                         <p><img src={contactPhone} />1800-120-9040</p>
                                         <p><img src={contactEmail} />info@svcl.in</p>
                                         <p>
-                                            <img src={contactLocation} />5th Floor, Tower
-                                            B, SAS Tower Medicity, Sector - 38, Gurugram Haryana, India
-                                            - 122001.
+                      <a href="tel:1800-120-9040">
+                        <img src={contactPhone} />
+                        1800-120-9040
+                      </a>
+                    </p>
+                    <p>
+                      <a href="mailto:info@svcl.in">
+                        <img src={contactEmail} />
+                        info@svcl.in
+                      </a>
+                    </p>
+                    <p>
+                      <img src={contactLocation} />
+                      5th Floor, Tower B, SAS Tower Medicity, Sector - 38,
+                      Gurugram Haryana, India - 122001.
                                         </p>
                                     </div>
                                 </div>
@@ -90,9 +102,9 @@ function Contact() {
                                         <div className="row">
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <label htmlFor="firstName"
-                                                    >First Name <span>(optional)</span></label
-                                                    >
+                          <label htmlFor="firstName">
+                            First Name <span>(optional)</span>
+                          </label>
                                                     <input
                                                         onChange={(e) => setFirstName(e.target.value)}
                                                         type="text"
@@ -104,9 +116,9 @@ function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <label htmlFor="lastName"
-                                                    >Last name <span>(optional)</span></label
-                                                    >
+                          <label htmlFor="lastName">
+                            Last name <span>(optional)</span>
+                          </label>
                                                     <input
                                                         onChange={(e) => setLastName(e.target.value)}
                                                         type="text"
