@@ -113,7 +113,7 @@ function Grievance() {
                                             If the complaint is not resolved within 15 days, the
                                             customer can reach out to the grievance officer.<br /><br />
                                             Grievance Redressal Officer:<br />Mr. Akshay Pandey<br />Toll
-                                            Free Number: 1800-120-9040<br />Email:
+                                            Free Number: 1800-120-9040<br />Email: &nbsp;
                                             <a href="#" target="_blank">grievance@svcl.in</a>
                                         </p>
                                     </div>
@@ -125,7 +125,7 @@ function Grievance() {
                                         <p>
                                             If the complaint is not resolved within 30 days, the
                                             customer can reach out to the CBO <br /><br />
-                                            CBO: Mr. Anand Tripathi<br />Email:
+                                            CBO: Mr. Anand Tripathi<br />Email: &nbsp;
                                             <a href="#" target="_blank">cbo@svcl.in</a><br />Address:
                                             5th Floor, Tower B, SAS Tower, Medanta Sector-38, Gurugram,
                                             Haryana - 122001
@@ -147,7 +147,7 @@ function Grievance() {
                                             If the complaint is not addressed within 30 days, the
                                             customer can approach the Reserve Bank of India General
                                             Manager.<br /><br />
-                                            Phone number: 011-23318759,<br />Email:
+                                            Phone number: 011-23318759,<br />Email: &nbsp;
                                             <a href="#" target="_blank">dnbsnewdelhi@rbi.org.in</a
                                             ><br />
                                             Address: Delhi Regional Office Parliament Street, New

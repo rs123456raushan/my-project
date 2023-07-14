@@ -30,6 +30,7 @@ import partnerOrganisation1 from "./images/partner-organisation-1.png";
 import partnerOrganisation2 from "./images/partner-organisation-2.png";
 import partnerCredit1 from "./images/partner-credit-1.png";
 import partnerCredit2 from "./images/partner-credit-2.png";
+import dcbBank from "./images/dcbBank.jpg"
 import "./style.css";
 
 function Partners() {
@@ -77,21 +78,21 @@ function Partners() {
                                     aria-controls="banking-partner"
                                     aria-selected="false"
                                 >
-                  Lending Partners
+                                    Lending Partners
                                 </button>
                             </li>
                             <li className="nav-item" role="presentation">
                                 <button
                                     className="nav-link"
-                  id="bc-partners-tab"
+                                    id="bc-partners-tab"
                                     data-bs-toggle="tab"
-                  data-bs-target="#bc-partners"
+                                    data-bs-target="#bc-partners"
                                     type="button"
                                     role="tab"
-                  aria-controls="bc-partners"
+                                    aria-controls="bc-partners"
                                     aria-selected="false"
                                 >
-                  BC partners
+                                    BC partners
                                 </button>
                             </li>
                             <li className="nav-item" role="presentation">
@@ -150,20 +151,20 @@ function Partners() {
                                     Credit Bureau
                                 </button>
                             </li>
-              <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="rating-agency-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#rating-agency"
-                  type="button"
-                  role="tab"
-                  aria-controls="rating-agency"
-                  aria-selected="false"
-                >
-                  Rating Agencies
-                </button>
-              </li>
+                            <li className="nav-item" role="presentation">
+                                <button
+                                    className="nav-link"
+                                    id="rating-agency-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#rating-agency"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="rating-agency"
+                                    aria-selected="false"
+                                >
+                                    Rating Agencies
+                                </button>
+                            </li>
                         </ul>
 
                         <hr />
@@ -175,22 +176,22 @@ function Partners() {
                                 id="all"
                                 role="tabpanel"
                                 aria-labelledby="all-tab"
-                tabIndex="0"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerLending1} alt="" />
-                  <img src={partnerLending2} alt="" />
-                  <img src={partnerLending3} alt="" />
-                  <img src={partnerLending4} alt="" />
-                  <img src={partnerLending5} alt="" />
-                  <img src={partnerLending6} alt="" />
-                  <img src={partnerLending7} alt="" />
-                  <img src={partnerLending8} alt="" />
-                  <img src={partnerLending9} alt="" />
-                  <img src={partnerLending10} alt="" />
-                  <img src={partnerLending11} alt="" />
-                  <img src={partnerLending12} alt="" />
-                  <img src={partnerLending13} alt="" />
+                                    <img src={partnerLending1} alt="" />
+                                    <img src={partnerLending2} alt="" />
+                                    <img src={partnerLending3} alt="" />
+                                    <img src={partnerLending4} alt="" />
+                                    <img src={partnerLending5} alt="" />
+                                    <img src={partnerLending6} alt="" />
+                                    <img src={partnerLending7} alt="" />
+                                    <img src={partnerLending8} alt="" />
+                                    <img src={partnerLending9} alt="" />
+                                    <img src={partnerLending10} alt="" />
+                                    <img src={partnerLending11} alt="" />
+                                    <img src={partnerLending12} alt="" />
+                                    <img src={partnerLending13} alt="" />
                                 </div>
                             </div>
                             <div
@@ -198,36 +199,38 @@ function Partners() {
                                 id="banking-partner"
                                 role="tabpanel"
                                 aria-labelledby="banking-partner-tab"
-                tabIndex="0"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerLending1} alt="" />
-                  <img src={partnerLending2} alt="" />
-                  <img src={partnerLending3} alt="" />
-                  <img src={partnerLending4} alt="" />
-                  <img src={partnerLending5} alt="" />
-                  <img src={partnerLending6} alt="" />
-                  <img src={partnerLending7} alt="" />
-                  <img src={partnerLending9} alt="" />
-                  <img src={partnerLending10} alt="" />
-                  <img src={partnerLending11} alt="" />
-                  <img src={partnerLending12} alt="" />
-                  <img src={partnerLending13} alt="" />
+                                    <img src={partnerLending1} alt="" />
+                                    <img src={partnerLending2} alt="" />
+                                    <img src={partnerLending3} alt="" />
+                                    <img src={partnerLending4} alt="" />
+                                    <img src={partnerLending5} alt="" />
+                                    <img src={partnerLending6} alt="" />
+                                    <img src={partnerLending7} alt="" />
+                                    <img src={partnerLending9} alt="" />
+                                    {/* <img src={partnerLending10} alt="" /> */}
+                                    <img src={partnerLending11} alt="" />
+                                    <img src={partnerLending12} alt="" />
+                                    <img src={partnerLending13} alt="" />
                                 </div>
                             </div>
                             <div
                                 className="tab-pane fade"
-                id="bc-partners"
+                                id="bc-partners"
                                 role="tabpanel"
-                aria-labelledby="bc-partners-tab"
-                tabIndex="0"
+                                aria-labelledby="bc-partners-tab"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerBank1} alt="" />
-                  <img src={partnerBank2} alt="" />
-                  <img src={partnerBank3} alt="" />
-                  <img src={partnerBank4} alt="" />
-                  <img src={partnerLending8} alt="" />
+                                    <img src={partnerBank1} alt="" />
+                                    <img src={partnerBank2} alt="" />
+                                    <img src={partnerBank3} alt="" />
+                                    <img src={partnerBank4} alt="" />
+                                    <img src={partnerLending8} alt="" />
+                                    <img src={partnerLending10} alt="" />
+                                    <img src={dcbBank} alt="" />
                                 </div>
                             </div>
                             <div
@@ -235,10 +238,10 @@ function Partners() {
                                 id="technical-partner"
                                 role="tabpanel"
                                 aria-labelledby="technical-partner-tab"
-                tabIndex="0"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerTechnical1} alt="" />
+                                    <img src={partnerTechnical1} alt="" />
                                 </div>
                             </div>
                             <div
@@ -246,11 +249,11 @@ function Partners() {
                                 id="self-regulatory"
                                 role="tabpanel"
                                 aria-labelledby="self-regulatory-tab"
-                tabIndex="0"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerOrganisation1} alt="" />
-                  <img src={partnerOrganisation2} alt="" />
+                                    <img src={partnerOrganisation1} alt="" />
+                                    <img src={partnerOrganisation2} alt="" />
                                 </div>
                             </div>
                             <div
@@ -258,14 +261,14 @@ function Partners() {
                                 id="group-insurance"
                                 role="tabpanel"
                                 aria-labelledby="group-insurance-tab"
-                tabIndex="0"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerInsurance1} alt="" />
-                  <img src={partnerInsurance2} alt="" />
-                  <img src={partnerInsurance3} alt="" />
-                  <img src={partnerInsurance4} alt="" />
-                  <img src={partnerInsurance6} alt="" />
+                                    <img src={partnerInsurance1} alt="" />
+                                    <img src={partnerInsurance2} alt="" />
+                                    <img src={partnerInsurance3} alt="" />
+                                    <img src={partnerInsurance4} alt="" />
+                                    <img src={partnerInsurance6} alt="" />
                                 </div>
                             </div>
                             <div
@@ -273,23 +276,23 @@ function Partners() {
                                 id="credit-bureau"
                                 role="tabpanel"
                                 aria-labelledby="credit-bureau-tab"
-                tabIndex="0"
+                                tabIndex="0"
                             >
                                 <div className="product-tab-item">
-                  <img src={partnerCredit1} alt="" />
-                  <img src={partnerCredit2} alt="" />
-                </div>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="rating-agency"
-                role="tabpanel"
-                aria-labelledby="rating-agency-tab"
-                tabIndex="0"
-              >
-                <div className="product-tab-item">
-                  <img src={partnerRating1} alt="" />
-                  <img src={partnerRating2} alt="" />
+                                    <img src={partnerCredit1} alt="" />
+                                    <img src={partnerCredit2} alt="" />
+                                </div>
+                            </div>
+                            <div
+                                className="tab-pane fade"
+                                id="rating-agency"
+                                role="tabpanel"
+                                aria-labelledby="rating-agency-tab"
+                                tabIndex="0"
+                            >
+                                <div className="product-tab-item">
+                                    <img src={partnerRating1} alt="" />
+                                    <img src={partnerRating2} alt="" />
                                 </div>
                             </div>
                         </div>

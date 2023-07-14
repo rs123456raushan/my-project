@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './style.css'
 import { useLocation } from 'react-router-dom'
 
 function PolicyContent() {
     const location = useLocation();
 
-    useEffect(() => {
-        console.log(location.state.title)
-    })
     return (
         <div className='container'>
             <h1 className='main-heading'>{location.state.title}</h1>

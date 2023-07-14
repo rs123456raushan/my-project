@@ -82,7 +82,7 @@ function Footer() {
                   <img src={footerMailIcon} />
                   </a>
                   <div>
-                    <p>Email id</p>
+                    <p>Email id:</p>
                     <h6>
                       <a href="mailto:info@svcl.in">info@svcl.in</a>
                     </h6>
@@ -104,8 +104,9 @@ function Footer() {
                   <div>
                     <p>Address</p>
                     <h6>
-                      201, Empire Apartments, First Floor, Sultanpur MG Road,
-                      New Delhi-110030
+                      {/* 201, Empire Apartments, First Floor, Sultanpur MG Road,
+                      New Delhi-110030 */}
+                      5th Floor, Tower B, SAS Tower Medicity, Sector - 38, Gurugram Haryana, India - 122001.
                     </h6>
                   </div>
                 </div>

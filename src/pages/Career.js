@@ -277,7 +277,7 @@ function Career() {
                       /> */}
                       <select
                         onChange={(e) => setRole(e.target.value)}
-                        class="form-select"
+                        className="form-select"
                         aria-label="Default select example"
                       >
                         <option selected>Select Role</option>
