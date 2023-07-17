@@ -102,7 +102,7 @@ function Career() {
                 </div>
                 <div className="work-card-body">
                   <h5>We are creating impact Real impact.</h5>
-                  <p>Improved lives of 30 lakh rural women. And counting.</p>
+                  <p>Improved lives of 15 lakh rural women. And counting.</p>
                 </div>
               </div>
 

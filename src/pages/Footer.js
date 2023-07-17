@@ -7,10 +7,9 @@ import { NavLink } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
-
   useEffect(() => {
-    window.history.scrollRestoration = 'manual'
-  }, [])
+    window.history.scrollRestoration = "manual";
+  }, []);
 
   return (
     // <!-- *************** FOOTER SECTION STARTS *************** -->
@@ -21,13 +20,13 @@ function Footer() {
             <div className="col-md-4 col-12">
               <div className="footer-section-left">
                 <a href="/">
-                <img src={footerLogo} />
+                  <img src={footerLogo} />
                 </a>
                 <p>
                   Since 2010, we are on a{" "}
                   <strong> mission to enable and empower rural women</strong> in
-                  India by providing them with access to credit Currently, we
-                  operate across India with 250 branches in 10 states
+                  India by providing them with access to credit. Currently, we
+                  operate across India with 249 branches in 10 states.
                 </p>
               </div>
             </div>
@@ -36,19 +35,54 @@ function Footer() {
                 <h6>Quick Links</h6>
                 <ul>
                   <li>
-                    <NavLink to="/home" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Home</NavLink>
+                    <NavLink
+                      to="/home"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Home
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/presence" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Presence</NavLink>
+                    <NavLink
+                      to="/presence"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Presence
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/products" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Products</NavLink>
+                    <NavLink
+                      to="/products"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Products
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/technology" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Technology</NavLink>
+                    <NavLink
+                      to="/technology"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Technology
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/partners" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Partners</NavLink>
+                    <NavLink
+                      to="/partners"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Partners
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -58,19 +92,54 @@ function Footer() {
                 <h6>Quick Links</h6>
                 <ul>
                   <li>
-                    <NavLink to="/team" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Team</NavLink>
+                    <NavLink
+                      to="/team"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Team
+                    </NavLink>
+                  </li>
+                  {/* <li>
+                    <NavLink
+                      to="/policies"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Policies
+                    </NavLink>
+                  </li> */}
+                  <li>
+                    <NavLink
+                      to="/board"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Board
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/policies" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Policies</NavLink>
+                    <NavLink
+                      to="/contact"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Contact us
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/board" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Board</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/contact" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Contact us</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/grievance" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Customer Grievance</NavLink>
+                    <NavLink
+                      to="/grievance"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                      }
+                    >
+                      Customer Grievance
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -79,7 +148,7 @@ function Footer() {
               <div className="footer-section-right">
                 <div className="footer-card">
                   <a href="mailto:info@svcl.in">
-                  <img src={footerMailIcon} />
+                    <img src={footerMailIcon} />
                   </a>
                   <div>
                     <p>Email id:</p>
@@ -90,7 +159,7 @@ function Footer() {
                 </div>
                 <div className="footer-card">
                   <a href="tel:1800-120-9040">
-                  <img src={footerPhoneIcon} />
+                    <img src={footerPhoneIcon} />
                   </a>
                   <div>
                     <p>Contact</p>
@@ -106,7 +175,8 @@ function Footer() {
                     <h6>
                       {/* 201, Empire Apartments, First Floor, Sultanpur MG Road,
                       New Delhi-110030 */}
-                      5th Floor, Tower B, SAS Tower Medicity, Sector - 38, Gurugram Haryana, India - 122001.
+                      5th Floor, Tower B, SAS Tower Medicity, Sector - 38,
+                      Gurugram Haryana, India - 122001.
                     </h6>
                   </div>
                 </div>

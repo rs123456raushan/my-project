@@ -3,6 +3,7 @@ import objects from "./images/OBJECTS.png";
 import team03 from "./images/team-03 1.png";
 import indexFocusSegment from "./images/index-focus-segment-img.png";
 import indexFounderImage from "./images/index-founder-img.webp";
+
 import "./style.css";
 
 function About() {
@@ -96,12 +97,12 @@ function About() {
                     We are proud and humbled to be one of pioneers of the Indian
                     microfinance industry.&nbsp;
                     <strong>
-                       With 30 lakh women borrowers served to date,
-                    </strong>&nbsp;
-                    we are breaking barriers that have hindered their progress
-                    for too long. These women are not just borrowers; they are
-                    courageous entrepreneurs with dreams and aspirations,
-                    deserving equal opportunities.
+                      With 15 lakh women borrowers served to date,
+                    </strong>
+                    &nbsp; we are breaking barriers that have hindered their
+                    progress for too long. These women are not just borrowers;
+                    they are courageous entrepreneurs with dreams and
+                    aspirations, deserving equal opportunities.
                   </span>
                   <br />
                   <br />

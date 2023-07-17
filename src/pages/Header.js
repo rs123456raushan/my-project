@@ -38,7 +38,11 @@ function Header() {
       <div className="navbar-wrapper">
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <NavLink className="navbar-brand" to="/" onClick={() => setNavOpen(false)}>
+            <NavLink
+              className="navbar-brand"
+              to="/"
+              onClick={() => setNavOpen(false)}
+            >
               <img src={headerLogo} alt="" />
             </NavLink>
             <button
@@ -133,8 +137,7 @@ function Header() {
                     Governance
                   </a>
                   <ul className="dropdown-menu">
-                    <li>
-                      {/* <a className="dropdown-item" href="#">Policies</a> */}
+                    {/* <li>
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -143,7 +146,7 @@ function Header() {
                       >
                         Policies
                       </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                       {/* <a className="dropdown-item" href="#">Board</a> */}
                       <NavLink
@@ -155,8 +158,7 @@ function Header() {
                         Board
                       </NavLink>
                     </li>
-                    <li>
-                      {/* <a className="dropdown-item" href="#">Fair Practices</a> */}
+                    {/* <li>
                       <NavLink
                         className="dropdown-item"
                         style={{ background: "none" }}
@@ -165,7 +167,7 @@ function Header() {
                       >
                         Fair Practices
                       </NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 <li className="nav-item">
@@ -219,7 +221,7 @@ function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

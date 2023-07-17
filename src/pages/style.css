@@ -177,8 +177,8 @@ p {
   color: var(--black-00);
 }
 
-.styles-module_blinkingCursor__yugAC{
-  font-weight: 400!important;
+.styles-module_blinkingCursor__yugAC {
+  font-weight: 400 !important;
 }
 
 /*************** HEADER SECTION CSS ***************/
@@ -200,7 +200,7 @@ header .topbar ul li {
   gap: 8px;
 }
 
-header .topbar ul li a{
+header .topbar ul li a {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -219,6 +219,7 @@ header .topbar ul li span {
 }
 
 header .navbar {
+  background-color: white;
   padding: 18px 0;
 }
 
@@ -301,7 +302,7 @@ header .collapse ul li .active {
   margin-top: 70px;
 }
 
-.about-us-section-top h4+p {
+.about-us-section-top h4 + p {
   margin: 20px 0 40px;
   color: var(--black-00);
   text-align: center;
@@ -518,8 +519,8 @@ header .collapse ul li .active {
 .value-cards-wrapper .value-card-image img,
 .value-mobile-section .value-card-image img {
   width: 100%;
-  /* -webkit-filter: grayscale(100%); */
-  /* filter: grayscale(100%); */
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
 }
 
 .value-cards-wrapper .value-card-body,
@@ -564,7 +565,6 @@ header .collapse ul li .active {
 .carrer-value-mobile-section .main-heading {
   padding-top: 40px;
 }
-
 
 /*************** FOOTER SECTION CSS ***************/
 
@@ -652,7 +652,7 @@ header .collapse ul li .active {
   line-height: 24px;
 }
 
-.footer-section .footer-section-right .footer-card div h6 a{
+.footer-section .footer-section-right .footer-card div h6 a {
   font-weight: 500;
   font-size: 16px;
   color: var(--black-33);
@@ -821,11 +821,11 @@ header .collapse ul li .active {
 
 .product-card-section .product-card .card-body {
   background-color: #f2f2f2;
-  padding: 40px 25px;
+  padding: 40px 25px 25px;
 }
 
 .product-card-section .product-card .card-body .para-top {
-  min-height: 300px;
+  min-height: 255px;
 }
 
 .product-card-section .product-card .card-body .para-top p {
@@ -839,49 +839,76 @@ header .collapse ul li .active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
-  margin-top: 50px;
+  /* column-gap: 21px; */
+  row-gap: 15px;
+  margin-top: 20px;
 }
 
 .product-card-section .product-card .card-body .card-stats-wrapper .card-stat {
-  width: 31%;
-  margin-bottom: 30px;
+  width: 47%;
+  padding: 14px 9px 14px 14px;
+  border-radius: 6px;
+  background-color: #fff;
+  /* margin-bottom: 30px; */
 }
 
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(3) {
+/* .product-card-section
+  .product-card
+  .card-body
+  .card-stats-wrapper
+  .card-stat:nth-child(3) {
   max-width: fit-content;
-}
+} */
 
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(4) {
+/* .product-card-section
+  .product-card
+  .card-body
+  .card-stats-wrapper
+  .card-stat:nth-child(4) {
   flex-grow: 1;
-}
+} */
 
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(4) span {
+.product-card-section
+  .product-card
+  .card-body
+  .card-stats-wrapper
+  .card-stat:nth-child(4)
+  span {
   font-size: 13px;
   font-weight: 400;
 }
 
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(5) {
+.product-card-section
+  .product-card
+  .card-body
+  .card-stats-wrapper
+  .card-stat:nth-child(5) {
   flex-grow: 1;
 }
 
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(5) span {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat p {
+.product-card-section
+  .product-card
+  .card-body
+  .card-stats-wrapper
+  .card-stat
+  p {
   font-size: 16px;
-  margin-bottom: 20px;
-  text-align: start;
+  margin-bottom: 10px;
+  /* text-align: start; */
   color: #4f4f4f;
+  font-weight: 400;
 }
 
-.product-card-section .product-card .card-body .card-stats-wrapper .card-stat h6 {
+.product-card-section
+  .product-card
+  .card-body
+  .card-stats-wrapper
+  .card-stat
+  h6 {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
-  text-align: start;
+  font-weight: 600;
+  /* text-align: start; */
   color: #333333;
 }
 
@@ -1030,6 +1057,8 @@ header .collapse ul li .active {
 .person-card-wrapper .person-card img {
   width: 100%;
   height: inherit;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .person-card-wrapper .person-card .person-card-text {
@@ -1275,19 +1304,35 @@ header .collapse ul li .active {
   position: relative;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper {
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-wrapper {
   border-radius: 10px;
   overflow: hidden;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper img {
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-wrapper
+  img {
   max-width: 100%;
   height: 650px;
   object-fit: cover;
   object-position: right bottom;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-content {
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-content {
   position: absolute;
   text-align: justify;
   padding-right: 50px;
@@ -1295,14 +1340,26 @@ header .collapse ul li .active {
   left: 50px;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-content h4 {
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-content
+  h4 {
   font-weight: 600;
   font-size: 36px;
   color: var(--white);
   margin-bottom: 55px;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p {
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-content
+  p {
   font-size: 16px;
   color: var(--white);
   margin-bottom: 50px;
@@ -1310,7 +1367,14 @@ header .collapse ul li .active {
   display: flex;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p a{
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-content
+  p
+  a {
   font-size: 16px;
   color: var(--white);
   line-height: 30px;
@@ -1318,7 +1382,14 @@ header .collapse ul li .active {
   text-decoration: none;
 }
 
-.contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
+.contact-section
+  .container
+  .contact-section-form
+  .row
+  .col-md-4
+  .contact-image-content
+  p
+  img {
   margin-right: 20px;
   margin-top: 3px;
   width: 24px;
@@ -1358,13 +1429,21 @@ header .collapse ul li .active {
 }
 
 .contact-section .container .contact-section-form .form-group input:focus,
-.contact-section .container .contact-section-form .form-group input:focus-visible {
+.contact-section
+  .container
+  .contact-section-form
+  .form-group
+  input:focus-visible {
   box-shadow: none;
   background-color: none;
   outline: 0;
 }
 
-.contact-section .container .contact-section-form .form-group input::placeholder {
+.contact-section
+  .container
+  .contact-section-form
+  .form-group
+  input::placeholder {
   color: #8d8d8d;
 }
 
@@ -1400,24 +1479,43 @@ header .collapse ul li .active {
   padding: 10px 200px 10px 10px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5 {
   position: relative;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-wrapper {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-wrapper {
   border-radius: 10px;
   overflow: hidden;
 }
 
-
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-wrapper img {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-wrapper
+  img {
   max-width: 100%;
   object-fit: cover;
   object-position: right bottom;
   height: 650px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-content {
   position: absolute;
   text-align: justify;
   padding-right: 50px;
@@ -1425,14 +1523,26 @@ header .collapse ul li .active {
   left: 50px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content h4 {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-content
+  h4 {
   font-weight: 600;
   font-size: 36px;
   color: var(--white);
   margin-bottom: 55px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-content
+  p {
   font-size: 16px;
   color: var(--white);
   margin-bottom: 50px;
@@ -1440,7 +1550,14 @@ header .collapse ul li .active {
   display: flex;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-content
+  p
+  a {
   font-size: 16px;
   color: var(--white);
   line-height: 30px;
@@ -1448,27 +1565,49 @@ header .collapse ul li .active {
   text-decoration: none;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-5
+  .grievance-redressal-image-content
+  p
+  img {
   margin-right: 20px;
   margin-top: 3px;
   width: 24px;
   height: 24px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7 {
   margin-top: 30px;
   padding-left: 80px;
   padding-right: 30px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-heading {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7
+  .grievance-redressal-right-section-heading {
   font-size: 28px;
   font-weight: 600;
   color: var(--black-33);
   margin-bottom: 25px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7
+  .grievance-redressal-right-section-cards
+  .grievance-card-content {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -1477,7 +1616,14 @@ header .collapse ul li .active {
   box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content img {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7
+  .grievance-redressal-right-section-cards
+  .grievance-card-content
+  img {
   padding: 20px;
   width: 65px;
   height: 65px;
@@ -1486,21 +1632,46 @@ header .collapse ul li .active {
   margin-right: 12px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div p {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7
+  .grievance-redressal-right-section-cards
+  .grievance-card-content
+  div
+  p {
   font-size: 14px;
   color: #828282;
   margin-top: 12px;
   margin-bottom: 6px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 {
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7
+  .grievance-redressal-right-section-cards
+  .grievance-card-content
+  div
+  h6 {
   color: var(--black-33);
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
 }
 
-.grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 a{
+.grievance-redressal-section
+  .container
+  .grievance-redressal-section-content
+  .row
+  .col-md-7
+  .grievance-redressal-right-section-cards
+  .grievance-card-content
+  div
+  h6
+  a {
   color: var(--black-33);
   font-size: 18px;
   font-weight: 500;
@@ -1595,14 +1766,11 @@ header .collapse ul li .active {
   line-height: 28px;
 }
 
-
-
 @media (min-width: 1500px) {
   .impact-section {
     background-size: 100% 100%;
   }
 }
-
 
 /******************************************************/
 /********** MEDIA QUERY MAX-WIDTH : 1399PX CSS STARTED **********/
@@ -1674,6 +1842,25 @@ header .collapse ul li .active {
     padding: 0 5%;
   }
 
+  /******************************************************/
+  /********** PRODUCT AND SERVICES PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** PRODUCT CARD SECTION CSS ***************/
+
+  .product-card-section .product-card .card-body .para-top {
+    min-height: 310px;
+  }
+
+  .product-card-section
+    .container
+    .row
+    .col-md-4:nth-child(2)
+    .product-card
+    .card-body
+    .card-stats-wrapper {
+    padding-bottom: 22px;
+  }
 
   /******************************************************/
   /********** PARTNERS AND ASSOCIATION PAGE CSS STARTED **********/
@@ -1743,16 +1930,34 @@ header .collapse ul li .active {
 
   /*************** CONTACT FORM SECTION CSS ***************/
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
     height: 580px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content h4 {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
     font-size: 30px;
     margin-bottom: 48px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
     font-size: 14px;
     margin-bottom: 40px;
   }
@@ -1771,11 +1976,21 @@ header .collapse ul li .active {
     padding: 10px 100px 10px 10px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
     margin-bottom: 40px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7 {
     margin-top: 30px;
     padding-left: 80px;
     padding-right: 30px;
@@ -1861,7 +2076,7 @@ header .collapse ul li .active {
 
   /*************** ABOUT US SECTION CSS ***************/
 
-  .about-us-section-top h4+p {
+  .about-us-section-top h4 + p {
     font-size: 18px;
     line-height: 24px;
   }
@@ -2085,14 +2300,34 @@ header .collapse ul li .active {
   }
 
   .product-card-section .product-card .card-body .card-stats-wrapper {
-    gap: 6px;
+    row-gap: 10px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat p {
+  .product-card-section
+    .container
+    .row
+    .col-md-4:nth-child(2)
+    .product-card
+    .card-body
+    .card-stats-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    p {
     font-size: 12px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat h6 {
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
     font-size: 15px;
   }
 
@@ -2160,7 +2395,6 @@ header .collapse ul li .active {
   .person-card-wrapper .person-card .person-card-text {
     height: 98px;
     padding: 40px 15px 15px 15px;
-
   }
 
   .person-card-wrapper .person-card .person-card-text h4 {
@@ -2236,7 +2470,12 @@ header .collapse ul li .active {
     font-size: 12px;
   }
 
-  .apply-section .container .apply-section-form .form-group .resume-button .btn {
+  .apply-section
+    .container
+    .apply-section-form
+    .form-group
+    .resume-button
+    .btn {
     font-size: 12px;
   }
 
@@ -2255,26 +2494,56 @@ header .collapse ul li .active {
 
   /*************** CONTACT FORM SECTION CSS ***************/
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
     height: 500px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content {
     padding-right: 45px;
     left: 40px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content h4 {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
     font-size: 22px;
     margin-bottom: 48px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
     font-size: 14px;
     margin-bottom: 36px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    img {
     margin-right: 15px;
     width: 20px;
     height: 20px;
@@ -2303,61 +2572,141 @@ header .collapse ul li .active {
     padding: 10px 55px 10px 10px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-wrapper img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-wrapper
+    img {
     height: 560px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content {
     padding-right: 45px;
     left: 40px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content h4 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    h4 {
     font-size: 22px;
     margin-bottom: 48px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
     font-size: 14px;
     margin-bottom: 36px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    a {
     font-size: 14px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    img {
     margin-right: 15px;
     width: 20px;
     height: 20px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-heading {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-heading {
     font-size: 24px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content {
     padding: 12px 30px 12px 12px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    img {
     padding: 16px;
     width: 55px;
     height: 55px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    p {
     font-size: 12px;
     margin-top: 8px;
     margin-bottom: 2px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    h6 {
     font-size: 16px;
     line-height: 26px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 a{
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    h6
+    a {
     font-size: 16px;
     line-height: 26px;
   }
@@ -2431,7 +2780,7 @@ header .collapse ul li .active {
 
   /*************** ABOUT US SECTION CSS ***************/
 
-  .about-us-section-top h4+p {
+  .about-us-section-top h4 + p {
     font-size: 16px;
   }
 
@@ -2696,34 +3045,56 @@ header .collapse ul li .active {
   }
 
   .product-card-section .product-card .card-body .card-stats-wrapper {
-    gap: 3px;
+    row-gap: 0px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat {
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat {
     margin-bottom: 15px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat p {
-    font-size: 10px;
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat {
+    padding: 10px 4px 10px 8px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat h6 {
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    p {
     font-size: 10px;
+    margin-bottom: 5px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(4) span {
-    font-size: 10px;
-  }
-
-
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat:nth-child(5) span {
-    font-size: 10px;
-    font-weight: 400;
-  }
-
-  .fs-12 {
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
     font-size: 8px;
   }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat:nth-child(4)
+    span {
+    font-size: 8px;
+  }
+
+  /* .fs-12 {
+    font-size: 8px;
+  } */
 
   /******************************************************/
   /********** PARTNERS AND ASSOCIATION PAGE CSS STARTED **********/
@@ -2783,7 +3154,6 @@ header .collapse ul li .active {
     height: 110px;
     padding: 50px 15px 15px 15px;
     /* text-align: justify; */
-
   }
 
   .person-card-wrapper .person-card .person-card-text h4 {
@@ -2873,7 +3243,12 @@ header .collapse ul li .active {
     font-size: 10px;
   }
 
-  .apply-section .container .apply-section-form .form-group .resume-button .btn {
+  .apply-section
+    .container
+    .apply-section-form
+    .form-group
+    .resume-button
+    .btn {
     font-size: 12px;
   }
 
@@ -2891,32 +3266,69 @@ header .collapse ul li .active {
 
   /*************** CONTACT FORM SECTION CSS ***************/
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
     height: 440px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content {
     padding-right: 30px;
     left: 30px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content h4 {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
     font-size: 15px;
     margin-bottom: 35px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
     font-size: 10px;
     margin-bottom: 20px;
     line-height: 26px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p a{
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    a {
     font-size: 10px;
     line-height: 26px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    img {
     margin-right: 10px;
     width: 15px;
     height: 15px;
@@ -2946,65 +3358,149 @@ header .collapse ul li .active {
     padding: 10px 40px 10px 10px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-wrapper img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-wrapper
+    img {
     height: 510px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content {
     padding-right: 40px;
     left: 30px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content h4 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    h4 {
     font-size: 20px;
     margin-bottom: 40px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
     font-size: 12px;
     margin-bottom: 25px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    a {
     font-size: 12px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    img {
     margin-right: 10px;
     width: 15px;
     height: 15px;
     margin-top: 7px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7 {
     padding-left: 60px;
     padding-right: 15px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-heading {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-heading {
     font-size: 18px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content {
     padding: 12px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    img {
     padding: 14px;
     width: 50px;
     height: 50px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    p {
     font-size: 10px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    h6 {
     font-size: 12px;
     line-height: 20px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div h6 a{
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    h6
+    a {
     font-size: 12px;
     line-height: 20px;
   }
@@ -3104,7 +3600,7 @@ header .collapse ul li .active {
     margin-top: 70px;
   }
 
-  .about-us-section-top h4+p {
+  .about-us-section-top h4 + p {
     font-size: 18px;
     line-height: normal;
   }
@@ -3437,20 +3933,51 @@ header .collapse ul li .active {
     line-height: 24px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat {
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat {
     margin-bottom: 20px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat:nth-child(4)
+    span {
+    font-size: 12px;
   }
 
   .product-card-section .product-card .card-body .card-stats-wrapper {
     margin-top: 20px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat p {
-    font-size: 14px;
-    margin-bottom: 15px;
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat {
+    padding: 10px 8px;
   }
 
-  .product-card-section .product-card .card-body .card-stats-wrapper .card-stat h6 {
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .product-card-section
+    .product-card
+    .card-body
+    .card-stats-wrapper
+    .card-stat
+    h6 {
     font-size: 16px;
     line-height: 20px;
   }
@@ -3643,7 +4170,7 @@ header .collapse ul li .active {
     padding: 0 25px;
   }
 
-  .apply-section .container .apply-section-form form>.row {
+  .apply-section .container .apply-section-form form > .row {
     padding-top: 50px;
   }
 
@@ -3695,43 +4222,85 @@ header .collapse ul li .active {
     padding: 0px;
   }
 
-  .contact-section .container .contact-section-form>.row {
+  .contact-section .container .contact-section-form > .row {
     flex-direction: column-reverse;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper {
     margin-top: 40px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-wrapper img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-wrapper
+    img {
     width: 100%;
     height: 460px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content {
     padding-right: 35px;
     top: 90px;
     left: 50px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content h4 {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    h4 {
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 30px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p {
     font-size: 16px;
     margin-bottom: 50px;
     line-height: 30px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p a{
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    a {
     font-size: 16px;
     line-height: 30px;
   }
 
-  .contact-section .container .contact-section-form .row .col-md-4 .contact-image-content p img {
+  .contact-section
+    .container
+    .contact-section-form
+    .row
+    .col-md-4
+    .contact-image-content
+    p
+    img {
     margin-right: 20px;
     /* margin-top: 5px; */
     width: 24px;
@@ -3779,54 +4348,113 @@ header .collapse ul li .active {
     flex-direction: column-reverse;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-wrapper {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-wrapper {
     margin-top: 30px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-wrapper img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-wrapper
+    img {
     width: 100%;
     height: 460px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content {
     padding-right: 35px;
     top: 80px;
     left: 50px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content h4 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    h4 {
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 30px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 50px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p a{
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    a {
     font-size: 16px;
     line-height: 30px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-5 .grievance-redressal-image-content p img {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-5
+    .grievance-redressal-image-content
+    p
+    img {
     margin-right: 20px;
     margin-top: 3px;
     width: 24px;
     height: 24px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7 {
     padding: 0 25px;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-heading {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-heading {
     text-align: center;
   }
 
-  .grievance-redressal-section .container .grievance-redressal-section-content .row .col-md-7 .grievance-redressal-right-section-cards .grievance-card-content div p {
+  .grievance-redressal-section
+    .container
+    .grievance-redressal-section-content
+    .row
+    .col-md-7
+    .grievance-redressal-right-section-cards
+    .grievance-card-content
+    div
+    p {
     font-size: 14px;
     margin-top: 4px;
   }
@@ -3863,8 +4491,8 @@ header .collapse ul li .active {
   /*************** TECHNOLOGY CAPITAL SECTION CSS ***************/
 }
 
-@media (max-width:380px) {
-  .person-card-wrapper .person-card .person-card-text{
+@media (max-width: 380px) {
+  .person-card-wrapper .person-card .person-card-text {
     height: 160px;
   }
 
@@ -3872,31 +4500,33 @@ header .collapse ul li .active {
     flex-basis: calc(100% / 1);
     height: 425px;
   }
-  
-  .person-card-wrapper .person-card .person-card-text .person-description{
+
+  .person-card-wrapper .person-card .person-card-text .person-description {
     display: none;
   }
 
   .person-card-wrapper .person-card:hover .person-card-text {
     height: 425px;
   }
-  
-  .person-card-wrapper .person-card:hover .person-card-text .person-description{
+
+  .person-card-wrapper
+    .person-card:hover
+    .person-card-text
+    .person-description {
     display: block;
     line-height: 22px;
   }
-  
-  .person-card-wrapper .person-card:hover .person-card-text .person-role{
+
+  .person-card-wrapper .person-card:hover .person-card-text .person-role {
     margin-bottom: 10px;
   }
 
-  .person-card-wrapper .person-card:hover .person-card-text h4{
+  .person-card-wrapper .person-card:hover .person-card-text h4 {
     margin-bottom: 10px;
   }
-
 }
 
-@media (max-width:370px) {
+@media (max-width: 370px) {
   .impact-section .impact-card {
     padding: 10px 5px 10px;
   }
