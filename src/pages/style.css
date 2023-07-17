@@ -1077,7 +1077,7 @@ header .collapse ul li .active {
 }
 
 .person-card-wrapper .person-card .person-card-text h4 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--white);
