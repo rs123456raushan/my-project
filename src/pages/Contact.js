@@ -108,15 +108,12 @@ function Contact() {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label htmlFor="firstName">
-                            First Name <span>(optional)</span>
-                          </label>
+                          <label htmlFor="firstName">First Name</label>
                           <input
                             onChange={(e) => setFirstName(e.target.value)}
                             type="text"
                             className="form-control"
                             id="firstName"
-                            placeholder="|"
                           />
                         </div>
                       </div>
@@ -130,7 +127,6 @@ function Contact() {
                             type="text"
                             className="form-control"
                             id="lastName"
-                            placeholder="Doe"
                           />
                         </div>
                       </div>
@@ -157,7 +153,6 @@ function Contact() {
                             type="text"
                             className="form-control"
                             id="phoneNumber"
-                            placeholder="+1 102 3456 789"
                             onChange={(e) => validatePhone(e)}
                           />
                           <span style={{ fontWeight: "bold", color: "red" }}>
@@ -173,7 +168,6 @@ function Contact() {
                             type="text"
                             className="form-control"
                             id="message"
-                            placeholder="Write your message.."
                           />
                         </div>
                       </div>

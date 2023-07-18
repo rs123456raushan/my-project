@@ -89,7 +89,7 @@ function Footer() {
             </div>
             <div className="col-md-2 col-6">
               <div className="footer-section-middle">
-                <h6>Quick links</h6>
+                <h6>&nbsp;</h6>
                 <ul>
                   <li>
                     <NavLink

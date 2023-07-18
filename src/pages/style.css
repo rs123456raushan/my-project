@@ -272,6 +272,10 @@ header .collapse ul li .active {
   transition: 0.3s;
 }
 
+.header-last-dropdown.dropdown-menu[data-bs-popper] {
+  left: -50px;
+}
+
 /*************** HERO SECTION CSS ***************/
 
 .main-wrapper.fixed {

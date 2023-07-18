@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import phoneIcon from "./images/phone-icon.png";
 import mailIcon from "./images/mail-icon.png";
 import headerLogo from "./images/header-logo.png";
@@ -21,8 +21,13 @@ function Header() {
   }
   window.addEventListener("scroll", setFixed);
 
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
+
   function toggleNav() {
     setNavOpen((state) => !state);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }
 
   return (
@@ -51,7 +56,10 @@ function Header() {
             <NavLink
               className="navbar-brand"
               to="/"
-              onClick={() => setNavOpen(false)}
+              onClick={() => {
+                setNavOpen(false);
+                toggleNav();
+              }}
             >
               <img src={headerLogo} alt="" />
             </NavLink>
@@ -198,9 +206,9 @@ function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Reach Us
+                    Reach us
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className="dropdown-menu header-last-dropdown">
                     <li>
                       {/* <a className="dropdown-item" href="#">Home</a> */}
                       <NavLink
@@ -209,7 +217,7 @@ function Header() {
                         to="/contact"
                         onClick={toggleNav}
                       >
-                        Contact Us
+                        Contact us
                       </NavLink>
                     </li>
                     <li>
@@ -220,7 +228,7 @@ function Header() {
                         to="/grievance"
                         onClick={toggleNav}
                       >
-                        Customer Grievance
+                        Customer grievance
                       </NavLink>
                     </li>
                   </ul>

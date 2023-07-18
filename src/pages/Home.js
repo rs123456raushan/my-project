@@ -58,7 +58,7 @@ function Home() {
                                     {
                                         totalWomens[index]
                                     } */}
-              Last year we helped{" "}
+              Last year, we helped{" "}
               <strong id="totalWomens">
                 {totalWomens[Index].split("").map(function (char, index) {
                   const style = { "animation-delay": 0.5 + index / 10 + "s" };

@@ -163,9 +163,7 @@ function Career() {
 
         <section className="apply-section">
           <div className="container">
-            <div className="apply-section-main-heading">
-              QUICKLY FILL OUR APPLICATION FORM
-            </div>
+            <div className="apply-section-main-heading">APPLY HERE</div>
             <div className="apply-section-form">
               <form>
                 <div className="row">
@@ -177,7 +175,6 @@ function Career() {
                         type="text"
                         className="form-control"
                         id="fullName"
-                        placeholder="John Doe"
                       />
                     </div>
                   </div>
@@ -188,7 +185,6 @@ function Career() {
                         type="email"
                         className="form-control"
                         id="Email"
-                        placeholder="abc@gmail.com"
                         onChange={(e) => validateEmail(e)}
                       />{" "}
                       <br />
@@ -204,7 +200,6 @@ function Career() {
                         type="text"
                         className="form-control"
                         id="phoneNumber"
-                        placeholder="+1 012 3456 789"
                         onChange={(e) => validatePhone(e)}
                       />{" "}
                       <br />
@@ -221,7 +216,6 @@ function Career() {
                         type="date"
                         className="form-control"
                         id="DOB"
-                        placeholder="DD-MM-YYYY"
                       />
                     </div>
                   </div>
@@ -259,9 +253,12 @@ function Career() {
                         aria-label="Default select example"
                       >
                         <option selected>Select Role</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="operations">Operations</option>
+                        <option value="finance">Finance</option>
+                        <option value="it">IT</option>
+                        <option value="human-resources">Human resources</option>
+                        <option value="audit">Audit</option>
+                        <option value="stragety">Stragety</option>
                       </select>
                     </div>
                   </div>
