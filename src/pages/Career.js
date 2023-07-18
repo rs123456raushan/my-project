@@ -23,6 +23,7 @@ function Career() {
   const [date, setDate] = useState("");
   const [years, setYears] = useState(null);
   const [months, setMonths] = useState(null);
+  const [fileName, setFileName] = useState(null);
 
   // Email Validation
   const validateEmail = (e) => {
@@ -72,7 +73,7 @@ function Career() {
       role === ""
     ) {
       toast.error("Fill all the details !", {
-        position: toast.POSITION.TOP_RIGHT,
+        position: toast.POSITION.TOP_CENTER,
       });
       e.preventDefault();
     }
@@ -262,7 +263,7 @@ function Career() {
                       </select>
                     </div>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-md-6">
                     <div className="form-group resume-upload">
                       <label htmlFor="resume">Resume</label>
                       <div className="resume-button">
@@ -270,6 +271,7 @@ function Career() {
                           type="file"
                           id="myFileInput"
                           style={{ display: "none" }}
+                          onChange={(e) => setFileName(e.target.files[0].name)}
                         />
                         <button
                           type="button"
@@ -280,6 +282,7 @@ function Career() {
                         >
                           Upload
                         </button>
+                        <label className="upload-filename ps-2">{fileName}</label>
                       </div>
                     </div>
                   </div>

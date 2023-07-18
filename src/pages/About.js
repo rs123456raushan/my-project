@@ -96,7 +96,7 @@ function About() {
                     We are proud and humbled to be one of pioneers of the Indian
                     microfinance industry.&nbsp;
                     <strong>
-                      With 15 lakh women borrowers served to date,
+                      With 15 lakh+ women borrowers served to date,
                     </strong>
                     &nbsp; we are breaking barriers that have hindered their
                     progress for too long. These women are not just borrowers;

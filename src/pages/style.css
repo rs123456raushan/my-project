@@ -1253,6 +1253,10 @@ header .collapse ul li .active {
   margin-bottom: 8px;
 }
 
+.apply-section .container .apply-section-form .form-group label.upload-filename {
+  font-size: 14px !important;
+}
+
 .apply-section .container .apply-section-form .form-group input {
   color: #011c2a;
   font-size: 14px;
@@ -4235,6 +4239,10 @@ header .collapse ul li .active {
     margin-bottom: 30px;
   }
 
+  .upload-filename {
+    margin-left: 10px;
+  }
+
   /******************************************************/
   /********** CONTACT US PAGE CSS STARTED **********/
   /******************************************************/
@@ -4588,6 +4596,10 @@ header .collapse ul li .active {
     /* bottom: 0; */
     opacity: 1;
   }
+}
+
+.Toastify__toast-container {
+  z-index: 2000000 !important;
 }
 
 /* .main-carousel-section .carousel-content .carousel-text p strong {
