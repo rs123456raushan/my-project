@@ -32,7 +32,7 @@ function Footer() {
             </div>
             <div className="col-md-2 col-6">
               <div className="footer-section-middle">
-                <h6>Quick Links</h6>
+                <h6>Quick links</h6>
                 <ul>
                   <li>
                     <NavLink
@@ -89,7 +89,7 @@ function Footer() {
             </div>
             <div className="col-md-2 col-6">
               <div className="footer-section-middle">
-                <h6>Quick Links</h6>
+                <h6>Quick links</h6>
                 <ul>
                   <li>
                     <NavLink
@@ -138,7 +138,7 @@ function Footer() {
                         window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
                       }
                     >
-                      Customer Grievance
+                      Customer grievance
                     </NavLink>
                   </li>
                 </ul>
@@ -147,13 +147,13 @@ function Footer() {
             <div className="col-md-4 col-12">
               <div className="footer-section-right">
                 <div className="footer-card">
-                  <a href="mailto:info@svcl.in">
+                  <a href="mailto:connect@svcl.in">
                     <img src={footerMailIcon} />
                   </a>
                   <div>
                     <p>Email id:</p>
                     <h6>
-                      <a href="mailto:info@svcl.in">info@svcl.in</a>
+                      <a href="mailto:connect@svcl.in">connect@svcl.in</a>
                     </h6>
                   </div>
                 </div>

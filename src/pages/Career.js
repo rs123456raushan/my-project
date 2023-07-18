@@ -177,7 +177,7 @@ function Career() {
                         type="text"
                         className="form-control"
                         id="fullName"
-                        placeholder="|"
+                        placeholder="John Doe"
                       />
                     </div>
                   </div>
@@ -188,7 +188,7 @@ function Career() {
                         type="email"
                         className="form-control"
                         id="Email"
-                        placeholder="Doe"
+                        placeholder="abc@gmail.com"
                         onChange={(e) => validateEmail(e)}
                       />{" "}
                       <br />
@@ -227,22 +227,6 @@ function Career() {
                   </div>
                   <div className="col-md-3">
                     <div className="form-group">
-                      <label htmlFor="mobileNumber">Mobile number</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="mobileNumber"
-                        placeholder="+91 -"
-                        onChange={(e) => validateMobile(e)}
-                      />{" "}
-                      <br />
-                      <span style={{ fontWeight: "bold", color: "red" }}>
-                        {mobile.length > 0 && phoneError}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="form-group">
                       <label htmlFor="workExperience">Work experience</label>
                       <div className="row">
                         <div className="col-md-6 col-6">
@@ -269,12 +253,6 @@ function Career() {
                   <div className="col-md-3">
                     <div className="form-group">
                       <label htmlFor="role">Role</label>
-                      {/* <input
-                                                type="text"
-                                                className="form-control"
-                                                id="role"
-                                                placeholder="Lorem Ipsum"
-                      /> */}
                       <select
                         onChange={(e) => setRole(e.target.value)}
                         className="form-select"
@@ -308,6 +286,7 @@ function Career() {
                       </div>
                     </div>
                   </div>
+                  <div className="col-md-3"></div>
                 </div>
                 <div>
                   <div className="row">

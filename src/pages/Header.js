@@ -11,6 +11,16 @@ import "./style.css";
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
 
+  const [fix, setFix] = useState(false);
+  function setFixed() {
+    if (window.scrollY >= 56) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  }
+  window.addEventListener("scroll", setFixed);
+
   function toggleNav() {
     setNavOpen((state) => !state);
   }
@@ -27,15 +37,15 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="mailto:info@svcl.in">
+              <a href="mailto:connect@svcl.in">
                 <img src={mailIcon} />
-                <span>info@svcl.in</span>
+                <span>connect@svcl.in</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="navbar-wrapper">
+      <div className={fix ? "navbar-wrapper fixed" : "navbar-wrapper"}>
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             <NavLink

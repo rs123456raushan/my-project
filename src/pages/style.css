@@ -218,10 +218,10 @@ header .topbar ul li span {
   font-weight: 500;
 }
 
-header .navbar {
+/* header .navbar {
   background-color: white;
   padding: 18px 0;
-}
+} */
 
 header .navbar-brand img {
   max-width: 168px;
@@ -254,7 +254,29 @@ header .collapse ul li .active {
   color: #db2228 !important;
 }
 
+.navbar-wrapper {
+  padding: 18px 0;
+  /* transition: 0.3s; */
+  background: var(--white);
+}
+.navbar-wrapper.fixed {
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1000000;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--white);
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
 /*************** HERO SECTION CSS ***************/
+
+.main-wrapper.fixed {
+  margin-top: 81px;
+}
 
 .main-carousel-section .carousel-content {
   background-image: url(images/hero-section-index-img.webp);
@@ -284,7 +306,7 @@ header .collapse ul li .active {
   line-height: 72px;
   text-align: center;
   color: #000;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -1077,7 +1099,7 @@ header .collapse ul li .active {
 }
 
 .person-card-wrapper .person-card .person-card-text h4 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--white);
@@ -2072,6 +2094,7 @@ header .collapse ul li .active {
   .main-carousel-section .carousel-content .carousel-text p {
     font-size: 38px;
     line-height: 64px;
+    max-width: 95%;
   }
 
   /*************** ABOUT US SECTION CSS ***************/
@@ -3157,7 +3180,7 @@ header .collapse ul li .active {
   }
 
   .person-card-wrapper .person-card .person-card-text h4 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -3584,7 +3607,7 @@ header .collapse ul li .active {
   }
 
   .main-carousel-section .carousel-content .carousel-text p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: normal;
     max-width: 100%;
   }

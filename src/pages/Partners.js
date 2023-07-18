@@ -78,7 +78,7 @@ function Partners() {
                   aria-controls="banking-partner"
                   aria-selected="false"
                 >
-                  Lending Partners
+                  Lending partners
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -106,7 +106,7 @@ function Partners() {
                   aria-controls="technical-partner"
                   aria-selected="false"
                 >
-                  Technical Partners
+                  Technical partners
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -120,7 +120,7 @@ function Partners() {
                   aria-controls="self-regulatory"
                   aria-selected="false"
                 >
-                  Self Regulatory Organisation
+                  Self regulatory organisation
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -134,7 +134,7 @@ function Partners() {
                   aria-controls="group-insurance"
                   aria-selected="false"
                 >
-                  Group Insurance Partners
+                  Group insurance partners
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -148,7 +148,7 @@ function Partners() {
                   aria-controls="credit-bureau"
                   aria-selected="false"
                 >
-                  Credit Bureau
+                  Credit bureau
                 </button>
               </li>
               <li className="nav-item" role="presentation">
@@ -162,7 +162,7 @@ function Partners() {
                   aria-controls="rating-agency"
                   aria-selected="false"
                 >
-                  Rating Agencies
+                  Rating agencies
                 </button>
               </li>
             </ul>

@@ -91,9 +91,9 @@ function Contact() {
                       </a>
                     </p>
                     <p>
-                      <a href="mailto:info@svcl.in">
+                      <a href="mailto:connect@svcl.in">
                         <img src={contactEmail} />
-                        info@svcl.in
+                        connect@svcl.in
                       </a>
                     </p>
                     <p>
