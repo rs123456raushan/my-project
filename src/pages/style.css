@@ -4648,4 +4648,5 @@ header .collapse ul li .active {
   height: 18px;
   text-align: center;
   margin-left: 6px;
+  cursor: pointer;
 }
