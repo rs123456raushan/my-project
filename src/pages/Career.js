@@ -24,6 +24,7 @@ function Career() {
   const [years, setYears] = useState(null);
   const [months, setMonths] = useState(null);
   const [fileName, setFileName] = useState(null);
+  const [exist, setExist] = useState(false);
 
   // Email Validation
   const validateEmail = (e) => {
@@ -78,6 +79,16 @@ function Career() {
       e.preventDefault();
     }
   };
+
+  const handleChange = (e) => {
+    setFileName(e.target.files[0].name);
+    setExist(true);
+  }
+
+  const handleExist = () => {
+    setFileName(null);
+    setExist(false);
+  }
 
   return (
     <div>
@@ -271,7 +282,7 @@ function Career() {
                           type="file"
                           id="myFileInput"
                           style={{ display: "none" }}
-                          onChange={(e) => setFileName(e.target.files[0].name)}
+                          onChange={(e) => handleChange(e)}
                         />
                         <button
                           type="button"
@@ -283,6 +294,7 @@ function Career() {
                           Upload
                         </button>
                         <label className="upload-filename ps-2">{fileName}</label>
+                        {exist && <label style={{fontWeight: "bold"}} onClick={handleExist} className="upload-filename ps-2">X</label>}
                       </div>
                     </div>
                   </div>
