@@ -294,7 +294,7 @@ function Career() {
                           Upload
                         </button>
                         <label className="upload-filename ps-2">{fileName}</label>
-                        {exist && <label style={{fontWeight: "bold"}} onClick={handleExist} className="upload-filename ps-2">X</label>}
+                        {exist && <p className="cross-upload" onClick={handleExist}>X</p>}
                       </div>
                     </div>
                   </div>

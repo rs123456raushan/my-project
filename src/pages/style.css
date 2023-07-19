@@ -379,6 +379,12 @@ header .collapse ul li .active {
   width: 100%;
 }
 
+.founder-section-left .card .card-img-top {
+  filter: grayscale(100%);
+  /* max-width: 495px;
+  width: 100%; */
+}
+
 .founder-section-left .card-body {
   background-color: #db2228;
   padding: 24px 40px;
@@ -4629,3 +4635,17 @@ header .collapse ul li .active {
     left: 100%;
   }
 } */
+
+.cross-upload {
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px 5px 5px 5px;
+  border-radius: 50%;
+  background: red;
+  font-size: 11px;
+  color: white;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  margin-left: 6px;
+}
