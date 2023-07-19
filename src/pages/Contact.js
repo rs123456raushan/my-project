@@ -108,7 +108,7 @@ function Contact() {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label htmlFor="firstName">First Name</label>
+                          <label htmlFor="firstName">First name</label>
                           <input
                             onChange={(e) => setFirstName(e.target.value)}
                             type="text"

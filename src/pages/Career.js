@@ -181,7 +181,7 @@ function Career() {
                 <div className="row">
                   <div className="col-md-3">
                     <div className="form-group">
-                      <label htmlFor="fullName">Full Name*</label>
+                      <label htmlFor="fullName">Full name*</label>
                       <input
                         onChange={(e) => setFullName(e.target.value)}
                         type="text"

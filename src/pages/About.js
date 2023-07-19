@@ -30,7 +30,7 @@ function About() {
                 <span>
                   We are constantly exploring boundaries and extending our
                   support towards the rural population. Currently, we operate
-                  across India with 250 branches in 10 states – Uttar Pradesh,
+                  across India with 249 branches in 10 states – Uttar Pradesh,
                   Uttarakhand, Bihar, Madhya Pradesh, Chhattisgarh, Jharkhand,
                   Punjab, Haryana, Rajasthan, Gujarat. 
                 </span>
