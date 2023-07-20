@@ -32,19 +32,7 @@ function Board() {
                   <h4>MR. SUNIL SACHDEVA</h4>
                   <p className="person-role">Founder</p>
                   <p className="person-description">
-                    He is a socially driven entrepreneur having in-depth
-                    experience in setting up various projects with outstanding
-                    achievements. “Medanta, the Medicity” an Asia famous
-                    hospital with state of art medical facilities is one of the
-                    ventures running successfully, helping society at
-                    large.Mr.Sachdeva, as a visionary entrepreneur, had helped
-                    society with first public private partnership in water
-                    distribution in Haryana.His other business ventures are into
-                    financial services, infrastructure development, technology
-                    and hospitality, flourishing at national and international
-                    level.His power, vision, values, charisma and intelligence
-                    all put together distinguish him as a leader who has
-                    organized a group of people to achieve a common goal.
+                    Sunil Sachdeva is a seasoned entrepreneur with a diverse business portfolio spanning healthcare, finance, real estate, and technology. He is the co-founder and director of Medanta, one of India’s largest multi-specialty hospitals (2400+ installed beds) with five hospitals in Delhi, Gurugram, Indore, Ranchi, Patna and Lucknow. In 2010, he established SVCL with a clear mission to facilitate financial inclusion for the enterprising rural women in India. His unwavering vision, boundless energy, and commitment to innovation have positioned him as a standout leader, propelling SVCL's growth story forward. His entrepreneurial journey has been instrumental in transforming access to quality healthcare and promoting financial inclusion in India.
                   </p>
                 </div>
               </div>
