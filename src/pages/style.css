@@ -1259,7 +1259,11 @@ header .collapse ul li .active {
   margin-bottom: 8px;
 }
 
-.apply-section .container .apply-section-form .form-group label.upload-filename {
+.apply-section
+  .container
+  .apply-section-form
+  .form-group
+  label.upload-filename {
   font-size: 14px !important;
 }
 
@@ -1276,7 +1280,7 @@ header .collapse ul li .active {
 
 .apply-section .container .apply-section-form .form-group .form-select {
   /* color: #8d8d8d; */
-  color: #011C2A;
+  color: #011c2a;
   font-size: 14px;
   font-weight: 500;
   border: none;
@@ -1928,6 +1932,19 @@ header .collapse ul li .active {
   }
 
   /******************************************************/
+  /********** BOARD PAGE CSS STARTED **********/
+  /******************************************************/
+
+  /*************** CARD SECTION CSS ***************/
+
+  .person-card-wrapper .person-card .person-card-text .person-description {
+    color: var(--white);
+    font-size: 11px;
+    line-height: 24px;
+    text-align: justify;
+  }
+
+  /******************************************************/
   /********** CAREERS PAGE CSS STARTED **********/
   /******************************************************/
 
@@ -2448,7 +2465,7 @@ header .collapse ul li .active {
   }
 
   .person-card-wrapper .person-card .person-card-text .person-description {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
   }
 
@@ -3207,7 +3224,7 @@ header .collapse ul li .active {
   }
 
   .person-card-wrapper .person-card .person-card-text .person-description {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 20px;
   }
 
@@ -4131,7 +4148,7 @@ header .collapse ul li .active {
 
   .person-card-wrapper .person-card .person-card-text .person-description {
     font-size: 13px;
-    line-height: 24px;
+    line-height: 27px;
   }
 
   .person-card-wrapper .person-card:hover .person-card-text {
@@ -4556,7 +4573,8 @@ header .collapse ul li .active {
     .person-card-text
     .person-description {
     display: block;
-    line-height: 22px;
+    font-size: 11px;
+    line-height: 20px;
   }
 
   .person-card-wrapper .person-card:hover .person-card-text .person-role {

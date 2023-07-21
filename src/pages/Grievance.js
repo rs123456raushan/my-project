@@ -43,9 +43,9 @@ function Grievance() {
                       </a>
                     </p>
                     <p>
-                      <a href="mailto:connect@svcl.in">
+                      <a href="mailto:customercare@svcl.in">
                         <img src={contactEmail} />
-                        connect@svcl.in
+                        customercare@svcl.in
                       </a>
                     </p>
                     <p>
@@ -68,13 +68,15 @@ function Grievance() {
                       </div>
                     </div>
                     <div className="grievance-card-content">
-                      <a href="mailto:info@svcl.in">
+                      <a href="mailto:customercare@svcl.in">
                         <img src={grievanceMail} />
                       </a>
                       <div>
                         <p>Email</p>
                         <h6>
-                          <a href="mailto:connect@svcl.in">connect@svcl.in</a>
+                          <a href="mailto:customercare@svcl.in">
+                            customercare@svcl.in
+                          </a>
                         </h6>
                       </div>
                     </div>
