@@ -30,6 +30,10 @@ function Header() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }
 
+  function NavbarToggleNav() {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }
+
   return (
     <header>
       <div className="topbar">
@@ -58,7 +62,7 @@ function Header() {
               to="/"
               onClick={() => {
                 setNavOpen(false);
-                toggleNav();
+                NavbarToggleNav();
               }}
             >
               <img src={headerLogo} alt="" />

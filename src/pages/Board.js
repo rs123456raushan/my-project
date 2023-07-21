@@ -7,11 +7,22 @@ import boardMeeta from "./images/board-meeta.webp";
 import boardKalpataru from "./images/board-kalpataru.jpg";
 import boardAnil from "./images/board-anil.webp";
 import "./style.css";
+import { useState } from "react";
 
 function Board() {
+  const [fix, setFix] = useState(false);
+  function setFixed() {
+    if (window.scrollY >= 56) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  }
+  window.addEventListener("scroll", setFixed);
+
   return (
     <div>
-      <div className="main wrapper">
+      <div className={fix ? "main-wrapper fixed" : "main-wrapper"}>
         {/* <!-- *************** HERO SECTION STARTS *************** --> */}
         <section className="hero-section">
           <img src={heroSectionBoard} alt="" />

@@ -186,12 +186,27 @@ function Partners() {
                   <img src={partnerLending5} alt="" />
                   <img src={partnerLending6} alt="" />
                   <img src={partnerLending7} alt="" />
-                  <img src={partnerLending8} alt="" />
                   <img src={partnerLending9} alt="" />
-                  <img src={partnerLending10} alt="" />
                   <img src={partnerLending11} alt="" />
                   <img src={partnerLending12} alt="" />
-                  <img src={partnerLending13} alt="" />
+                  <img src={partnerBank2} alt="" />
+                  <img src={partnerBank3} alt="" />
+                  <img src={partnerBank4} alt="" />
+                  <img src={partnerLending8} alt="" />
+                  <img src={partnerLending10} alt="" />
+                  <img src={dcbBank} alt="" />
+                  <img src={partnerTechnical1} alt="" />
+                  <img src={partnerOrganisation1} alt="" />
+                  <img src={partnerOrganisation2} alt="" />
+                  <img src={partnerInsurance1} alt="" />
+                  <img src={partnerInsurance2} alt="" />
+                  <img src={partnerInsurance3} alt="" />
+                  <img src={partnerInsurance4} alt="" />
+                  <img src={partnerInsurance6} alt="" />
+                  <img src={partnerCredit1} alt="" />
+                  <img src={partnerCredit2} alt="" />
+                  <img src={partnerRating1} alt="" />
+                  <img src={partnerRating2} alt="" />
                 </div>
               </div>
               <div
@@ -210,7 +225,6 @@ function Partners() {
                   <img src={partnerLending6} alt="" />
                   <img src={partnerLending7} alt="" />
                   <img src={partnerLending9} alt="" />
-                  {/* <img src={partnerLending10} alt="" /> */}
                   <img src={partnerLending11} alt="" />
                   <img src={partnerLending12} alt="" />
                   <img src={partnerLending13} alt="" />

@@ -711,6 +711,7 @@ header .collapse ul li .active {
 /*************** HERO SECTION CSS ***************/
 .hero-section {
   position: relative;
+  min-height: 505px;
 }
 
 .hero-section img {
@@ -1823,6 +1824,10 @@ header .collapse ul li .active {
 
   /*************** HEADER SECTION CSS ***************/
 
+  .hero-section {
+    min-height: 434px;
+  }
+
   header .collapse ul li {
     padding-right: 18px;
   }
@@ -2312,6 +2317,10 @@ header .collapse ul li .active {
   /**********************************************/
 
   /*************** HERO SECTION CSS ***************/
+
+  .hero-section {
+    min-height: 358px;
+  }
 
   .hero-section .hero-section-text {
     padding: 65px 0;
@@ -3025,6 +3034,10 @@ header .collapse ul li .active {
   /**********************************************/
 
   /*************** HERO SECTION CSS ***************/
+
+  .hero-section {
+    min-height: 277px;
+  }
 
   .hero-section .hero-section-text {
     padding: 50px 0;
