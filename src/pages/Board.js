@@ -3,7 +3,7 @@ import heroSectionBoard from "./images/hero-section-board-img.webp";
 import boardSunil from "./images/board-sunil.webp";
 import boardVijay from "./images/board-vijay.webp";
 import boardMeeta from "./images/board-meeta.webp";
-import boardKalpataru from "./images/board-kalpataru.webp";
+import boardKalpataru from "./images/board-kalpataru.jpg";
 import boardAnil from "./images/board-anil.webp";
 import "./style.css";
 

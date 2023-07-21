@@ -83,12 +83,12 @@ function Career() {
   const handleChange = (e) => {
     setFileName(e.target.files[0].name);
     setExist(true);
-  }
+  };
 
   const handleExist = () => {
     setFileName(null);
     setExist(false);
-  }
+  };
 
   return (
     <div>
@@ -264,13 +264,15 @@ function Career() {
                         className="form-select"
                         aria-label="Default select example"
                       >
-                        <option selected>Select Role</option>
-                        <option value="operations">Operations</option>
-                        <option value="finance">Finance</option>
-                        <option value="it">IT</option>
-                        <option value="human-resources">Human resources</option>
-                        <option value="audit">Audit</option>
-                        <option value="stragety">Stragety</option>
+                        <option selected>&nbsp;Select Role</option>
+                        <option value="operations">&nbsp;Operations</option>
+                        <option value="finance">&nbsp;Finance</option>
+                        <option value="it">&nbsp;IT</option>
+                        <option value="human-resources">
+                          &nbsp;Human resources
+                        </option>
+                        <option value="audit">&nbsp;Audit</option>
+                        <option value="stragety">&nbsp;Stragety</option>
                       </select>
                     </div>
                   </div>
@@ -293,8 +295,14 @@ function Career() {
                         >
                           Upload
                         </button>
-                        <label className="upload-filename ps-2">{fileName}</label>
-                        {exist && <p className="cross-upload" onClick={handleExist}>X</p>}
+                        <label className="upload-filename ps-2">
+                          {fileName}
+                        </label>
+                        {exist && (
+                          <p className="cross-upload" onClick={handleExist}>
+                            X
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>
