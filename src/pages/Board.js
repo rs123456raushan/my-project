@@ -2,7 +2,7 @@ import React from "react";
 import heroSectionBoard from "./images/hero-section-board-img.webp";
 import boardSunil from "./images/board-sunil.webp";
 // import boardVijay from "./images/board-vijay.webp";
-import boardVijay from "./images/vijay.png";
+import boardVijay from "./images/Vijay.png";
 import boardMeeta from "./images/board-meeta.webp";
 import boardKalpataru from "./images/board-kalpataru.jpg";
 import boardAnil from "./images/board-anil.webp";
