@@ -3,7 +3,7 @@ import heroSectionTeam from "./images/hero-section-team-img.webp";
 import teamAnand from "./images/team-anand.webp";
 import teamKapil from "./images/team-kapil.webp";
 import teamChandini from "./images/team-chandini.webp";
-import teamSaurabh from "./images/team-saurabh.png"
+import teamSaurabh from "./images/team-saurabh.png";
 import "./style.css";
 
 function Team() {
@@ -50,13 +50,18 @@ function Team() {
                   <h4>Saurabh arora</h4>
                   <p className="person-role">Chief Finance Officer</p>
                   <p className="person-description">
-                    Currently Working as Assistant Manager in Audit & Assurance
-                    with BDO India. Having Experience of more than 6 years in
-                    Audit & Assurance engagements with exposure to different
-                    industries and assignments with BSR & Co. LLP (KPMG India) &
-                    S.S. Kothari Mehta & Co. Experience across sectors,
-                    including Manufacturing, Financial Sectors (NBFCs & Stock
-                    Brokers), Construction, Service, etc.
+                    Mr Saurabh Arora, Chief Finance Officer has over 10 years of
+                    experience in financial management, audit, treasury, and
+                    accounting. He is a qualified Chartered Accountant. His
+                    professional journey includes valuable experience in
+                    conducting Audit & Assurance engagements across diverse
+                    industries with esteemed firms like BSR & Co. LLP (KPMG
+                    India) and S.S. Kothari Mehta & Co.Having worked with
+                    diverse sectors such as Manufacturing, Financial Sectors
+                    (NBFCs & Stock Brokers), Construction, Service, and more, he
+                    has gained valuable exposure. This experience has sharpened
+                    his skills and provided him with an in-depth understanding
+                    of the intricacies and distinctive demands of each industry.
                   </p>
                 </div>
               </div>
