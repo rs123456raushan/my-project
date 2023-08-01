@@ -1181,6 +1181,14 @@ header .collapse ul li .active {
   margin: 0 auto;
 }
 
+.work-cards-wrapper .work-card:nth-child(2) .work-card-image img {
+  padding: 2.5px 3px;
+}
+
+.work-cards-wrapper .work-card:nth-child(3) .work-card-image img {
+  padding: 1.5px 2px;
+}
+
 .work-cards-wrapper .work-card-image img {
   border-radius: 15px;
 }
@@ -1784,6 +1792,22 @@ header .collapse ul li .active {
   padding: 0;
   margin-bottom: 60px;
   background-color: var(--white);
+}
+
+.technology-capital-section
+  .work-cards-wrapper
+  .work-card:nth-child(2)
+  .work-card-image
+  img {
+  padding: 0px;
+}
+
+.technology-capital-section
+  .work-cards-wrapper
+  .work-card:nth-child(3)
+  .work-card-image
+  img {
+  padding: 0px;
 }
 
 .technology-capital-section .work-cards-wrapper .work-card-body {

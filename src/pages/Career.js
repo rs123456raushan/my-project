@@ -124,7 +124,7 @@ function Career() {
                 </div>
                 <div className="work-card-body">
                   <h5>
-                    We are growing.
+                    We are growing
                     <br />
                     Fast.
                   </h5>
